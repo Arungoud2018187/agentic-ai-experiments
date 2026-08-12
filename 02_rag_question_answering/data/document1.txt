@@ -1,0 +1,7 @@
+Agentic AI
+
+Agentic AI refers to artificial intelligence systems that can autonomously perform tasks by reasoning about goals, making decisions, using tools, and adapting their actions based on results.
+
+An AI agent typically receives a goal, determines what actions are required, executes those actions, observes the results, and continues until the task is completed.
+
+Agentic systems can use tools such as databases, APIs, search engines, calculators, and file systems.

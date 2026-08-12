@@ -1,0 +1,41 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Model/cache files
+*.bin
+*.safetensors
+*.gguf
+huggingface_cache/
+.cache/
+
+# Experiment generated files
+08_visual_qa/images/*
+02_rag_question_answering/vectorstore/*
+10_fine_tuning/models/*
+11_model_optimization/models/*
+
+# Keep required placeholder files
+!08_visual_qa/images/.gitkeep
+!02_rag_question_answering/vectorstore/.gitkeep
+!10_fine_tuning/models/.gitkeep
+!11_model_optimization/models/.gitkeep
+EOF

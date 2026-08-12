@@ -1,0 +1,9 @@
+Large Language Models
+
+Large Language Models are machine learning models trained on large collections of text.
+
+LLMs can perform tasks such as question answering, summarization, translation, classification, code generation, and information extraction.
+
+LLMs can sometimes generate incorrect information when they do not have sufficient context. Retrieval Augmented Generation can reduce this problem by providing relevant external information to the model.
+
+Local models can be run using frameworks such as Ollama. Running models locally can provide greater control over data and infrastructure.
