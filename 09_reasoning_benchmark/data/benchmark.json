@@ -1,0 +1,86 @@
+[
+  {
+    "id": "R01",
+    "category": "arithmetic",
+    "difficulty": "easy",
+    "question": "What is 18 * 7 + 12?",
+    "answer": "138"
+  },
+  {
+    "id": "R02",
+    "category": "percentage",
+    "difficulty": "easy",
+    "question": "A team has 24 analysts. 25% are on night shift. How many analysts are on night shift?",
+    "answer": "6"
+  },
+  {
+    "id": "R03",
+    "category": "algebra",
+    "difficulty": "medium",
+    "question": "Solve for x: 3x + 7 = 31",
+    "answer": "8"
+  },
+  {
+    "id": "R04",
+    "category": "logic",
+    "difficulty": "easy",
+    "question": "All SOC analysts are trained in SIEM. Priya is a SOC analyst. Is Priya trained in SIEM?",
+    "answer": "yes"
+  },
+  {
+    "id": "R05",
+    "category": "sequence",
+    "difficulty": "medium",
+    "question": "A sequence is 2, 6, 18, 54, ... What is the next term?",
+    "answer": "162"
+  },
+  {
+    "id": "R06",
+    "category": "probability",
+    "difficulty": "medium",
+    "question": "A dataset has 8 phishing emails and 12 benign emails. What fraction of the emails are phishing?",
+    "answer": "0.4"
+  },
+  {
+    "id": "R07",
+    "category": "average",
+    "difficulty": "easy",
+    "question": "The average of 10, 20, 30, 40 is?",
+    "answer": "25"
+  },
+  {
+    "id": "R08",
+    "category": "combinatorics",
+    "difficulty": "medium",
+    "question": "A PIN has 4 digits and each digit can be 0-9. How many combinations are possible?",
+    "answer": "10000"
+  },
+  {
+    "id": "R09",
+    "category": "percentage",
+    "difficulty": "easy",
+    "question": "A ransomware attack encrypts 40 of 200 files. What percentage of the files is encrypted?",
+    "answer": "20%"
+  },
+  {
+    "id": "R10",
+    "category": "logic",
+    "difficulty": "medium",
+    "question": "All vulnerabilities with CVSS >= 9 are critical. CVE-X has a CVSS score of 9.8. Is CVE-X critical?",
+    "answer": "yes"
+  },
+  {
+    "id": "R11",
+    "category": "sequence",
+    "difficulty": "medium",
+    "question": "A team detects 5 incidents on day 1, 10 incidents on day 2, and 20 incidents on day 3. If the pattern continues, how many incidents are detected on day 5?",
+    "answer": "80"
+  },
+  {
+    "id": "R12",
+    "category": "probability",
+    "difficulty": "easy",
+    "question": "A firewall blocks 15 of 60 requests. What fraction of requests is blocked?",
+    "answer": "0.25"
+  }
+]

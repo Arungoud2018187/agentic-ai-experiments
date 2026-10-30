@@ -1,0 +1,120 @@
+[
+  {
+    "id": "POL-001",
+    "name": "MFA for Privileged Access",
+    "description": "Privileged accounts must use multi-factor authentication.",
+    "framework": "ISO 27001 A.9.4 / NIST IA-2",
+    "severity": "critical",
+    "conditions": [
+      {"field": "privileged_access", "op": "eq", "value": true},
+      {"field": "mfa_enabled", "op": "eq", "value": false}
+    ],
+    "remediation": "Enable MFA on the privileged account immediately."
+  },
+  {
+    "id": "POL-002",
+    "name": "Security Awareness Training",
+    "description": "Security awareness training must be completed every 180 days.",
+    "framework": "ISO 27001 A.7.2.2",
+    "severity": "medium",
+    "conditions": [
+      {"field": "last_training_days", "op": "gt", "value": 180}
+    ],
+    "remediation": "Schedule the overdue awareness training module."
+  },
+  {
+    "id": "POL-003",
+    "name": "Least Privilege for Admin Access",
+    "description": "Admin access is limited to approved security and IT roles.",
+    "framework": "NIST AC-6",
+    "severity": "high",
+    "conditions": [
+      {"field": "access_level", "op": "eq", "value": "admin"},
+      {"field": "role", "op": "not_in", "value": ["Security Engineer", "IT Administrator", "CISO", "SOC Manager"]}
+    ],
+    "remediation": "Remove admin rights or move the user to an approved role."
+  },
+  {
+    "id": "POL-004",
+    "name": "Encryption of Sensitive Data",
+    "description": "PII and Restricted data must be encrypted at rest.",
+    "framework": "ISO 27001 A.10.1 / GDPR Art. 32",
+    "severity": "critical",
+    "conditions": [
+      {"field": "data_classification", "op": "in", "value": ["PII", "Restricted"]},
+      {"field": "encryption_at_rest", "op": "eq", "value": false}
+    ],
+    "remediation": "Enable encryption at rest before further processing."
+  },
+  {
+    "id": "POL-005",
+    "name": "Contractor Elevated Access",
+    "description": "Contractors must not hold write or admin access without review.",
+    "framework": "NIST AC-6(10)",
+    "severity": "high",
+    "conditions": [
+      {"field": "employment_type", "op": "eq", "value": "contractor"},
+      {"field": "access_level", "op": "in", "value": ["write", "admin"]}
+    ],
+    "remediation": "Downgrade access or document a time-bound exception."
+  },
+  {
+    "id": "POL-006",
+    "name": "Dormant Account Containment",
+    "description": "Disabled accounts must not retain active access.",
+    "framework": "CIS Control 5",
+    "severity": "critical",
+    "conditions": [
+      {"field": "account_status", "op": "eq", "value": "disabled"},
+      {"field": "active_access", "op": "eq", "value": true}
+    ],
+    "remediation": "Revoke all sessions and tokens for the disabled account."
+  },
+  {
+    "id": "POL-007",
+    "name": "MFA for Remote Access",
+    "description": "Remote access requires multi-factor authentication.",
+    "framework": "NIST IA-2(1)",
+    "severity": "high",
+    "conditions": [
+      {"field": "remote_access", "op": "eq", "value": true},
+      {"field": "mfa_enabled", "op": "eq", "value": false}
+    ],
+    "remediation": "Enforce MFA on the remote access gateway."
+  },
+  {
+    "id": "POL-008",
+    "name": "Password Rotation",
+    "description": "Passwords older than 90 days must be rotated.",
+    "framework": "CIS Control 5.2",
+    "severity": "low",
+    "conditions": [
+      {"field": "password_age_days", "op": "gt", "value": 90}
+    ],
+    "remediation": "Prompt the user to rotate the password."
+  },
+  {
+    "id": "POL-009",
+    "name": "Restricted Data Retention",
+    "description": "Restricted data must not be retained beyond 365 days.",
+    "framework": "GDPR Art. 5(1)(e)",
+    "severity": "medium",
+    "conditions": [
+      {"field": "data_classification", "op": "eq", "value": "Restricted"},
+      {"field": "retention_days", "op": "gt", "value": 365}
+    ],
+    "remediation": "Purge or archive the data under the retention policy."
+  },
+  {
+    "id": "POL-010",
+    "name": "Vendor Access Review",
+    "description": "Vendor access must be reviewed at least every 90 days.",
+    "framework": "ISO 27001 A.15.2",
+    "severity": "medium",
+    "conditions": [
+      {"field": "employment_type", "op": "eq", "value": "vendor"},
+      {"field": "last_review_days", "op": "gt", "value": 90}
+    ],
+    "remediation": "Complete the vendor access recertification."
+  }
+]

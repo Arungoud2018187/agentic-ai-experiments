@@ -1,0 +1,93 @@
+[
+  {
+    "question": "How many employees work in the Security department?",
+    "sql": "SELECT COUNT(*) AS employee_count FROM employees e JOIN departments d ON d.id = e.department_id WHERE d.name = 'Security'",
+    "rows": [
+      {
+        "employee_count": 3
+      }
+    ],
+    "answer": "The answer is 3.",
+    "steps": [
+      "Planner: offline rule-based SQL generator",
+      "Generated SQL: SELECT COUNT(*) AS employee_count FROM employees e JOIN departments d ON d.id = e.department_id WHERE d.name = 'Security'",
+      "SQL Result: [{'employee_count': 3}]",
+      "Answer: offline formatter",
+      "Final Answer: The answer is 3."
+    ]
+  },
+  {
+    "question": "What is the total budget of active projects?",
+    "sql": "SELECT SUM(budget) AS total_budget FROM projects WHERE status = 'Active'",
+    "rows": [
+      {
+        "total_budget": 850000.0
+      }
+    ],
+    "answer": "The answer is 850000.0.",
+    "steps": [
+      "Planner: offline rule-based SQL generator",
+      "Generated SQL: SELECT SUM(budget) AS total_budget FROM projects WHERE status = 'Active'",
+      "SQL Result: [{'total_budget': 850000.0}]",
+      "Answer: offline formatter",
+      "Final Answer: The answer is 850000.0."
+    ]
+  },
+  {
+    "question": "Which employee has the highest salary?",
+    "sql": "SELECT name, position, salary FROM employees ORDER BY salary DESC LIMIT 1",
+    "rows": [
+      {
+        "name": "Sanjay",
+        "position": "Finance Manager",
+        "salary": 150000.0
+      }
+    ],
+    "answer": "Based on the database, 1 record(s) were found:\n- name: Sanjay, position: Finance Manager, salary: 150000.0",
+    "steps": [
+      "Planner: offline rule-based SQL generator",
+      "Generated SQL: SELECT name, position, salary FROM employees ORDER BY salary DESC LIMIT 1",
+      "SQL Result: [{'name': 'Sanjay', 'position': 'Finance Manager', 'salary': 150000.0}]",
+      "Answer: offline formatter",
+      "Final Answer: Based on the database, 1 record(s) were found:\n- name: Sanjay, position: Finance Manager, salary: 150000.0"
+    ]
+  },
+  {
+    "question": "List employees with more than 5 years of experience.",
+    "sql": "SELECT name, position, experience, salary FROM employees WHERE experience > 5 ORDER BY experience DESC",
+    "rows": [
+      {
+        "name": "Sanjay",
+        "position": "Finance Manager",
+        "experience": 12,
+        "salary": 150000.0
+      },
+      {
+        "name": "Vikram",
+        "position": "Financial Analyst",
+        "experience": 8,
+        "salary": 105000.0
+      },
+      {
+        "name": "Kiran",
+        "position": "Security Engineer",
+        "experience": 7,
+        "salary": 135000.0
+      },
+      {
+        "name": "Sneha",
+        "position": "Marketing Manager",
+        "experience": 6,
+        "salary": 110000.0
+      }
+    ],
+    "answer": "Based on the database, 4 record(s) were found:\n- name: Sanjay, position: Finance Manager, experience: 12, salary: 150000.0\n- name: Vikram, position: Financial Analyst, experience: 8, salary: 105000.0\n- name: Kiran, position: Security Engineer, experience: 7, salary: 135000.0\n- name: Sneha, position: Marketing Manager, experience: 6, salary: 110000.0",
+    "steps": [
+      "Planner: offline rule-based SQL generator",
+      "Generated SQL: SELECT name, position, experience, salary FROM employees WHERE experience > 5 ORDER BY experience DESC",
+      "SQL Result: [{'name': 'Sanjay', 'position': 'Finance Manager', 'experience': 12, 'salary': 150000.0}, {'name': 'Vikram', 'position': 'Financial Analyst', 'experience': 8, 'salary': 105000.0}, {'name': 'Kiran', 'position': 'Security Engineer', 'experience': 7, 'salary': 135000.0}, {'name': 'Sneha', 'position': 'Marketing Manager', 'experience': 6, 'salary': 110000.0}]",
+      "Answer: offline formatter",
+      "Final Answer: Based on the database, 4 record(s) were found:\n- name: Sanjay, position: Finance Manager, experience: 12, salary: 150000.0\n- name: Vikram, position: Financial Analyst, experience: 8, salary: 105000.0\n- name: Kiran, position: Security Engineer, experience: 7, salary: 135000.0\n- name: Sneha, position: Marketing Manager, experience: 6, salary: 110000.0"
+    ]
+  }
+]

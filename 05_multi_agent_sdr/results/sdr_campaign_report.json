@@ -1,0 +1,751 @@
+{
+  "leads": [
+    {
+      "id": "L002",
+      "name": "Priya Nair",
+      "title": "Head of Security",
+      "company": "MediTrust Health",
+      "industry": "Healthcare",
+      "employees": 1450,
+      "country": "India",
+      "budget_usd": 90000,
+      "intent_score": 84,
+      "source": "demo_request",
+      "pain_points": [
+        "alert fatigue",
+        "fragmented SIEM data"
+      ],
+      "email": "priya.nair@meditrust.example",
+      "score": 94.8,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 28,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 16.8,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Head of Security)",
+        "Budget of $90,000 aligns with the offering",
+        "High intent score (84/100)",
+        "Company size (1450 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L005",
+      "name": "Marcus Chen",
+      "title": "Chief Information Security Officer",
+      "company": "Atlas Logistics",
+      "industry": "Logistics",
+      "employees": 2300,
+      "country": "Singapore",
+      "budget_usd": 150000,
+      "intent_score": 95,
+      "source": "conference",
+      "pain_points": [
+        "third-party risk",
+        "regulatory audits"
+      ],
+      "email": "marcus.chen@atlaslogistics.example",
+      "score": 94.0,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 30,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 19.0,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Chief Information Security Officer)",
+        "Budget of $150,000 aligns with the offering",
+        "High intent score (95/100)",
+        "Company size (2300 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L010",
+      "name": "Ananya Rao",
+      "title": "Head of Compliance",
+      "company": "PayNest",
+      "industry": "Fintech",
+      "employees": 780,
+      "country": "India",
+      "budget_usd": 75000,
+      "intent_score": 79,
+      "source": "partner",
+      "pain_points": [
+        "evidence collection",
+        "policy drift"
+      ],
+      "email": "ananya.rao@paynest.example",
+      "score": 90.8,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 28,
+        "company_size": 12,
+        "budget": 25,
+        "intent": 15.8,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Head of Compliance)",
+        "Budget of $75,000 aligns with the offering",
+        "High intent score (79/100)",
+        "Company size (780 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L001",
+      "name": "Aarav Mehta",
+      "title": "VP of Engineering",
+      "company": "FinSecure Payments",
+      "industry": "Fintech",
+      "employees": 620,
+      "country": "India",
+      "budget_usd": 65000,
+      "intent_score": 91,
+      "source": "webinar",
+      "pain_points": [
+        "manual compliance reporting",
+        "slow vendor security reviews"
+      ],
+      "email": "aarav.mehta@finsecure.example",
+      "score": 90.2,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 30,
+        "company_size": 12,
+        "budget": 20,
+        "intent": 18.2,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (VP of Engineering)",
+        "Budget of $65,000 aligns with the offering",
+        "High intent score (91/100)",
+        "Company size (620 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L008",
+      "name": "Grace Okafor",
+      "title": "Risk Manager",
+      "company": "Union Bank",
+      "industry": "Fintech",
+      "employees": 4200,
+      "country": "Nigeria",
+      "budget_usd": 120000,
+      "intent_score": 88,
+      "source": "referral",
+      "pain_points": [
+        "fraud detection",
+        "audit evidence collection"
+      ],
+      "email": "grace.okafor@unionbank.example",
+      "score": 89.6,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 17.6,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Budget of $120,000 aligns with the offering",
+        "High intent score (88/100)",
+        "Company size (4200 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L003",
+      "name": "Daniel Brooks",
+      "title": "SOC Manager",
+      "company": "CloudWave SaaS",
+      "industry": "SaaS",
+      "employees": 310,
+      "country": "United States",
+      "budget_usd": 42000,
+      "intent_score": 76,
+      "source": "linkedin",
+      "pain_points": [
+        "too many false positives",
+        "slow incident triage"
+      ],
+      "email": "daniel.brooks@cloudwave.example",
+      "score": 79.2,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 12,
+        "budget": 20,
+        "intent": 15.2,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Budget of $42,000 aligns with the offering",
+        "High intent score (76/100)",
+        "Company size (310 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L006",
+      "name": "Elena Rossi",
+      "title": "Director of IT",
+      "company": "EduSpark Learning",
+      "industry": "Education",
+      "employees": 220,
+      "country": "Italy",
+      "budget_usd": 22000,
+      "intent_score": 67,
+      "source": "webinar",
+      "pain_points": [
+        "limited security staff",
+        "cloud misconfiguration"
+      ],
+      "email": "elena.rossi@eduspark.example",
+      "score": 69.4,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 26,
+        "company_size": 12,
+        "budget": 13,
+        "intent": 13.4,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Director of IT)",
+        "Company size (220 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L007",
+      "name": "Rohit Verma",
+      "title": "Engineering Manager",
+      "company": "Nova AI Labs",
+      "industry": "SaaS",
+      "employees": 140,
+      "country": "India",
+      "budget_usd": 36000,
+      "intent_score": 82,
+      "source": "product_trial",
+      "pain_points": [
+        "secrets sprawl",
+        "prompt injection testing"
+      ],
+      "email": "rohit.verma@novalabs.example",
+      "score": 69.4,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 8,
+        "budget": 13,
+        "intent": 16.4,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "High intent score (82/100)"
+      ]
+    },
+    {
+      "id": "L004",
+      "name": "Sneha Kulkarni",
+      "title": "Security Analyst",
+      "company": "RetailOne",
+      "industry": "Retail",
+      "employees": 85,
+      "country": "India",
+      "budget_usd": 8000,
+      "intent_score": 58,
+      "source": "blog",
+      "pain_points": [
+        "phishing awareness"
+      ],
+      "email": "sneha.k@retailone.example",
+      "score": 35.6,
+      "tier": "D",
+      "qualified": false,
+      "score_breakdown": {
+        "seniority": 9,
+        "company_size": 8,
+        "budget": 2,
+        "intent": 11.6,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Limited buying signals in the current profile",
+        "Below the 65-point qualification threshold"
+      ]
+    },
+    {
+      "id": "L009",
+      "name": "Tom Becker",
+      "title": "IT Administrator",
+      "company": "BuildRight Construction",
+      "industry": "Construction",
+      "employees": 45,
+      "country": "Germany",
+      "budget_usd": 5000,
+      "intent_score": 41,
+      "source": "cold_email",
+      "pain_points": [
+        "password resets"
+      ],
+      "email": "tom.becker@buildright.example",
+      "score": 27.2,
+      "tier": "D",
+      "qualified": false,
+      "score_breakdown": {
+        "seniority": 8,
+        "company_size": 4,
+        "budget": 2,
+        "intent": 8.2,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Limited buying signals in the current profile",
+        "Below the 65-point qualification threshold"
+      ]
+    }
+  ],
+  "qualified_leads": [
+    {
+      "id": "L002",
+      "name": "Priya Nair",
+      "title": "Head of Security",
+      "company": "MediTrust Health",
+      "industry": "Healthcare",
+      "employees": 1450,
+      "country": "India",
+      "budget_usd": 90000,
+      "intent_score": 84,
+      "source": "demo_request",
+      "pain_points": [
+        "alert fatigue",
+        "fragmented SIEM data"
+      ],
+      "email": "priya.nair@meditrust.example",
+      "score": 94.8,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 28,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 16.8,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Head of Security)",
+        "Budget of $90,000 aligns with the offering",
+        "High intent score (84/100)",
+        "Company size (1450 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L005",
+      "name": "Marcus Chen",
+      "title": "Chief Information Security Officer",
+      "company": "Atlas Logistics",
+      "industry": "Logistics",
+      "employees": 2300,
+      "country": "Singapore",
+      "budget_usd": 150000,
+      "intent_score": 95,
+      "source": "conference",
+      "pain_points": [
+        "third-party risk",
+        "regulatory audits"
+      ],
+      "email": "marcus.chen@atlaslogistics.example",
+      "score": 94.0,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 30,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 19.0,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Chief Information Security Officer)",
+        "Budget of $150,000 aligns with the offering",
+        "High intent score (95/100)",
+        "Company size (2300 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L010",
+      "name": "Ananya Rao",
+      "title": "Head of Compliance",
+      "company": "PayNest",
+      "industry": "Fintech",
+      "employees": 780,
+      "country": "India",
+      "budget_usd": 75000,
+      "intent_score": 79,
+      "source": "partner",
+      "pain_points": [
+        "evidence collection",
+        "policy drift"
+      ],
+      "email": "ananya.rao@paynest.example",
+      "score": 90.8,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 28,
+        "company_size": 12,
+        "budget": 25,
+        "intent": 15.8,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Head of Compliance)",
+        "Budget of $75,000 aligns with the offering",
+        "High intent score (79/100)",
+        "Company size (780 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L001",
+      "name": "Aarav Mehta",
+      "title": "VP of Engineering",
+      "company": "FinSecure Payments",
+      "industry": "Fintech",
+      "employees": 620,
+      "country": "India",
+      "budget_usd": 65000,
+      "intent_score": 91,
+      "source": "webinar",
+      "pain_points": [
+        "manual compliance reporting",
+        "slow vendor security reviews"
+      ],
+      "email": "aarav.mehta@finsecure.example",
+      "score": 90.2,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 30,
+        "company_size": 12,
+        "budget": 20,
+        "intent": 18.2,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Senior decision maker (VP of Engineering)",
+        "Budget of $65,000 aligns with the offering",
+        "High intent score (91/100)",
+        "Company size (620 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L008",
+      "name": "Grace Okafor",
+      "title": "Risk Manager",
+      "company": "Union Bank",
+      "industry": "Fintech",
+      "employees": 4200,
+      "country": "Nigeria",
+      "budget_usd": 120000,
+      "intent_score": 88,
+      "source": "referral",
+      "pain_points": [
+        "fraud detection",
+        "audit evidence collection"
+      ],
+      "email": "grace.okafor@unionbank.example",
+      "score": 89.6,
+      "tier": "A",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 15,
+        "budget": 25,
+        "intent": 17.6,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Budget of $120,000 aligns with the offering",
+        "High intent score (88/100)",
+        "Company size (4200 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L003",
+      "name": "Daniel Brooks",
+      "title": "SOC Manager",
+      "company": "CloudWave SaaS",
+      "industry": "SaaS",
+      "employees": 310,
+      "country": "United States",
+      "budget_usd": 42000,
+      "intent_score": 76,
+      "source": "linkedin",
+      "pain_points": [
+        "too many false positives",
+        "slow incident triage"
+      ],
+      "email": "daniel.brooks@cloudwave.example",
+      "score": 79.2,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 12,
+        "budget": 20,
+        "intent": 15.2,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "Budget of $42,000 aligns with the offering",
+        "High intent score (76/100)",
+        "Company size (310 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L006",
+      "name": "Elena Rossi",
+      "title": "Director of IT",
+      "company": "EduSpark Learning",
+      "industry": "Education",
+      "employees": 220,
+      "country": "Italy",
+      "budget_usd": 22000,
+      "intent_score": 67,
+      "source": "webinar",
+      "pain_points": [
+        "limited security staff",
+        "cloud misconfiguration"
+      ],
+      "email": "elena.rossi@eduspark.example",
+      "score": 69.4,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 26,
+        "company_size": 12,
+        "budget": 13,
+        "intent": 13.4,
+        "industry_fit": 5
+      },
+      "qualification_reasons": [
+        "Senior decision maker (Director of IT)",
+        "Company size (220 employees) fits the ICP"
+      ]
+    },
+    {
+      "id": "L007",
+      "name": "Rohit Verma",
+      "title": "Engineering Manager",
+      "company": "Nova AI Labs",
+      "industry": "SaaS",
+      "employees": 140,
+      "country": "India",
+      "budget_usd": 36000,
+      "intent_score": 82,
+      "source": "product_trial",
+      "pain_points": [
+        "secrets sprawl",
+        "prompt injection testing"
+      ],
+      "email": "rohit.verma@novalabs.example",
+      "score": 69.4,
+      "tier": "B",
+      "qualified": true,
+      "score_breakdown": {
+        "seniority": 22,
+        "company_size": 8,
+        "budget": 13,
+        "intent": 16.4,
+        "industry_fit": 10
+      },
+      "qualification_reasons": [
+        "High intent score (82/100)"
+      ]
+    }
+  ],
+  "emails": [
+    {
+      "lead_id": "L002",
+      "to": "priya.nair@meditrust.example",
+      "subject": "Reducing alert fatigue at MediTrust Health",
+      "body": "Hi Priya,\n\nI noticed MediTrust Health is investing in healthcare security and that alert fatigue is on your radar.\n\nOur platform helps teams like yours cut alert noise with risk-ranked detections and automated triage. It connects to the tools you already use and produces an auditable trail.\n\nTeams of a similar size have reduced manual review time by about 40% within the first quarter.\n\nWould a 20-minute technical walkthrough next week be useful?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "A",
+      "personalisation": {
+        "pain_point": "alert fatigue",
+        "value_hook": "cut alert noise with risk-ranked detections and automated triage"
+      }
+    },
+    {
+      "lead_id": "L005",
+      "to": "marcus.chen@atlaslogistics.example",
+      "subject": "Reducing third-party risk at Atlas Logistics",
+      "body": "Hi Marcus,\n\nI noticed Atlas Logistics is investing in logistics security and that third-party risk is on your radar.\n\nOur platform helps teams like yours score vendor risk with continuous evidence instead of annual questionnaires. It connects to the tools you already use and produces an auditable trail.\n\nTeams of a similar size have reduced manual review time by about 40% within the first quarter.\n\nWould a 20-minute technical walkthrough next week be useful?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "A",
+      "personalisation": {
+        "pain_point": "third-party risk",
+        "value_hook": "score vendor risk with continuous evidence instead of annual questionnaires"
+      }
+    },
+    {
+      "lead_id": "L010",
+      "to": "ananya.rao@paynest.example",
+      "subject": "Reducing evidence collection at PayNest",
+      "body": "Hi Ananya,\n\nI noticed PayNest is investing in fintech security and that evidence collection is on your radar.\n\nOur platform helps teams like yours reduce operational risk with an agentic security workflow. It connects to the tools you already use and produces an auditable trail.\n\nTeams of a similar size have reduced manual review time by about 40% within the first quarter.\n\nWould a 20-minute technical walkthrough next week be useful?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "A",
+      "personalisation": {
+        "pain_point": "evidence collection",
+        "value_hook": "reduce operational risk with an agentic security workflow"
+      }
+    },
+    {
+      "lead_id": "L001",
+      "to": "aarav.mehta@finsecure.example",
+      "subject": "Reducing manual compliance reporting at FinSecure Payments",
+      "body": "Hi Aarav,\n\nI noticed FinSecure Payments is investing in fintech security and that manual compliance reporting is on your radar.\n\nOur platform helps teams like yours automate evidence collection and generate audit-ready reports. It connects to the tools you already use and produces an auditable trail.\n\nTeams of a similar size have reduced manual review time by about 40% within the first quarter.\n\nWould a 20-minute technical walkthrough next week be useful?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "A",
+      "personalisation": {
+        "pain_point": "manual compliance reporting",
+        "value_hook": "automate evidence collection and generate audit-ready reports"
+      }
+    },
+    {
+      "lead_id": "L008",
+      "to": "grace.okafor@unionbank.example",
+      "subject": "Reducing fraud detection at Union Bank",
+      "body": "Hi Grace,\n\nI noticed Union Bank is investing in fintech security and that fraud detection is on your radar.\n\nOur platform helps teams like yours combine behavioural signals with transaction risk scoring. It connects to the tools you already use and produces an auditable trail.\n\nTeams of a similar size have reduced manual review time by about 40% within the first quarter.\n\nWould a 20-minute technical walkthrough next week be useful?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "A",
+      "personalisation": {
+        "pain_point": "fraud detection",
+        "value_hook": "combine behavioural signals with transaction risk scoring"
+      }
+    },
+    {
+      "lead_id": "L003",
+      "to": "daniel.brooks@cloudwave.example",
+      "subject": "Reducing too many false positives at CloudWave SaaS",
+      "body": "Hi Daniel,\n\nI noticed CloudWave SaaS is investing in saas security and that too many false positives is on your radar.\n\nOur platform helps teams like yours prioritise only the incidents that need human attention. It connects to the tools you already use and produces an auditable trail.\n\nA short pilot is usually enough to measure the reduction in manual work.\n\nWould you be open to a 20-minute discovery call?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "B",
+      "personalisation": {
+        "pain_point": "too many false positives",
+        "value_hook": "prioritise only the incidents that need human attention"
+      }
+    },
+    {
+      "lead_id": "L006",
+      "to": "elena.rossi@eduspark.example",
+      "subject": "Reducing limited security staff at EduSpark Learning",
+      "body": "Hi Elena,\n\nI noticed EduSpark Learning is investing in education security and that limited security staff is on your radar.\n\nOur platform helps teams like yours reduce operational risk with an agentic security workflow. It connects to the tools you already use and produces an auditable trail.\n\nA short pilot is usually enough to measure the reduction in manual work.\n\nWould you be open to a 20-minute discovery call?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "B",
+      "personalisation": {
+        "pain_point": "limited security staff",
+        "value_hook": "reduce operational risk with an agentic security workflow"
+      }
+    },
+    {
+      "lead_id": "L007",
+      "to": "rohit.verma@novalabs.example",
+      "subject": "Reducing secrets sprawl at Nova AI Labs",
+      "body": "Hi Rohit,\n\nI noticed Nova AI Labs is investing in saas security and that secrets sprawl is on your radar.\n\nOur platform helps teams like yours find and rotate exposed credentials across repositories. It connects to the tools you already use and produces an auditable trail.\n\nA short pilot is usually enough to measure the reduction in manual work.\n\nWould you be open to a 20-minute discovery call?\n\nBest regards,\nGrowvion Security Team",
+      "tier": "B",
+      "personalisation": {
+        "pain_point": "secrets sprawl",
+        "value_hook": "find and rotate exposed credentials across repositories"
+      }
+    }
+  ],
+  "summary": {
+    "total_leads": 10,
+    "qualified_leads": 8,
+    "disqualified_leads": 2,
+    "emails_written": 8,
+    "qualification_rate": 80.0,
+    "average_score": 74.0,
+    "tiers": {
+      "A": 5,
+      "B": 3,
+      "D": 2
+    },
+    "by_industry": {
+      "Healthcare": {
+        "total": 1,
+        "qualified": 1
+      },
+      "Logistics": {
+        "total": 1,
+        "qualified": 1
+      },
+      "Fintech": {
+        "total": 3,
+        "qualified": 3
+      },
+      "SaaS": {
+        "total": 2,
+        "qualified": 2
+      },
+      "Education": {
+        "total": 1,
+        "qualified": 1
+      },
+      "Retail": {
+        "total": 1,
+        "qualified": 0
+      },
+      "Construction": {
+        "total": 1,
+        "qualified": 0
+      }
+    },
+    "top_lead": "Priya Nair",
+    "top_score": 94.8,
+    "pipeline_value_usd": 600000,
+    "industries": {
+      "Healthcare": 1,
+      "Logistics": 1,
+      "Fintech": 3,
+      "SaaS": 2,
+      "Education": 1,
+      "Retail": 1,
+      "Construction": 1
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "agent": "LeadGenerator",
+      "action": "load/generate leads",
+      "count": "all"
+    },
+    {
+      "step": 2,
+      "agent": "LeadQualifier",
+      "action": "score leads with BANT-style rubric",
+      "count": 10
+    },
+    {
+      "step": 3,
+      "agent": "EmailWriter",
+      "action": "write personalised outreach",
+      "count": 8
+    },
+    {
+      "step": 4,
+      "agent": "SDRSupervisor",
+      "action": "aggregate campaign report",
+      "status": "complete"
+    }
+  ]
+}

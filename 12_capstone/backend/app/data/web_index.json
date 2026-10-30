@@ -1,0 +1,58 @@
+[
+  {
+    "id": "web-agentic-2026",
+    "title": "2026 State of Agentic AI in Customer Support",
+    "url": "https://example.com/reports/agentic-ai-2026",
+    "snippet": "Agentic assistants are moving from pilots to production, with retrieval and tool use cited as the top success factors.",
+    "content": "The 2026 industry survey finds that 62% of support organizations have moved at least one agentic workflow into production. The most common use cases are knowledge retrieval, ticket triage, and operational reporting. Teams report that grounded retrieval and explicit tool permissions matter more than model size. Human review remains mandatory for refunds and account changes."
+  },
+  {
+    "id": "web-rag-practices",
+    "title": "Enterprise RAG: Five Practices That Survive Contact With Users",
+    "url": "https://example.com/guides/enterprise-rag-practices",
+    "snippet": "Chunk quality, citations, and evaluation datasets separate useful RAG systems from demos.",
+    "content": "Successful enterprise RAG programs invest in document hygiene, chunk-level citations, and a golden question set for regression testing. Hybrid retrieval improves recall for product names and policy identifiers. Teams should log retrieved chunks and answer confidence so failures can be traced. Re-ranking is valuable when the corpus exceeds a few thousand chunks."
+  },
+  {
+    "id": "web-agent-governance",
+    "title": "A Practical Governance Model for Tool-Using Agents",
+    "url": "https://example.com/insights/agent-governance",
+    "snippet": "Least-privilege tools, audit trails, and human approval gates reduce operational risk.",
+    "content": "Tool-using agents need scoped credentials and read-only defaults. High-impact actions such as refunds, contract changes, and data deletion should require human approval. An audit trail should capture the user request, routing decision, tool inputs, tool outputs, and final answer. Red-team exercises should include prompt injection through retrieved documents."
+  },
+  {
+    "id": "web-support-benchmark",
+    "title": "Customer Support Automation Benchmark 2026",
+    "url": "https://example.com/benchmarks/support-automation-2026",
+    "snippet": "Median deflection rises to 31%, while resolution quality depends on escalation design.",
+    "content": "The benchmark covers 140 support teams using AI assistance. Median ticket deflection reached 31%, up from 19% a year earlier. The strongest programs combine AI answers with a clear escalation path to a human. CSAT was stable when citations were shown, but declined when answers omitted sources. Average handling time fell 18% for agents using summarization tools."
+  },
+  {
+    "id": "web-competitive-landscape",
+    "title": "Competitive Landscape: Customer Operations Platforms",
+    "url": "https://example.com/analysis/customer-ops-landscape",
+    "snippet": "Buyers compare time-to-value, integration depth, and governance rather than feature count.",
+    "content": "The customer operations market is consolidating around platforms that combine ticketing, knowledge, and analytics. Buyers shortlist vendors on implementation time, native integrations, and admin usability. Enterprise deals increasingly require SSO, audit logs, regional data residency, and AI governance controls. Differentiation is shifting toward workflow automation and measurable deflection."
+  },
+  {
+    "id": "web-implementation-playbook",
+    "title": "From Pilot to Production: An Agentic AI Playbook",
+    "url": "https://example.com/playbooks/pilot-to-production",
+    "snippet": "Start with a narrow, measurable workflow and expand only after evaluation gates pass.",
+    "content": "Teams that succeed with agentic AI begin with a narrow workflow such as policy Q&A or revenue reporting. They define success metrics, build an evaluation set, and run shadow mode before enabling user traffic. Production readiness requires monitoring for retrieval failures, tool errors, latency, and cost. A weekly review of failed traces accelerates improvement."
+  },
+  {
+    "id": "web-security-llm",
+    "title": "Securing LLM Applications Against Prompt Injection",
+    "url": "https://example.com/security/llm-prompt-injection",
+    "snippet": "Treat retrieved content as untrusted and enforce authorization outside the model.",
+    "content": "Prompt injection defenses should not rely on model instructions alone. Systems should separate trusted instructions from untrusted retrieved text and enforce authorization in application code. Tool calls should be validated against an allowlist and scoped to the current user. Output filters and human approval reduce the impact of successful injection attempts."
+  },
+  {
+    "id": "web-roi",
+    "title": "Measuring ROI for AI Support Assistants",
+    "url": "https://example.com/research/ai-support-roi",
+    "snippet": "Deflection, handling time, and quality-adjusted resolution are the metrics that matter.",
+    "content": "A credible ROI model combines deflection, average handling time, and quality-adjusted resolution rate. Teams should subtract escalation and review costs from gross savings. Pilots typically show the strongest gains in knowledge retrieval and ticket summarization. Benefits compound when answers are embedded directly in the agent workspace."
+  }
+]

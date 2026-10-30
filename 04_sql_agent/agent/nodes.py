@@ -1,38 +1,28 @@
+"""Agent nodes: plan -> execute -> answer.
+
+The planning node asks an LLM for SQL and falls back to a deterministic
+rule-based translator when no model server is available.  The answer
+node always produces a readable response from the query result.
+"""
+
 import json
-import requests
+import re
 
-from tools.schema_tool import get_schema
+from agent.llm import LLMUnavailable, ask_llm
+from agent.sql_fallback import generate_sql_offline
 from tools.query_tool import execute_query
+from tools.schema_tool import get_schema
 
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "qwen3:8b"
-
-
-def ask_llm(prompt):
-
-    response = requests.post(
-        OLLAMA_URL,
-        json={
-            "model": MODEL,
-            "prompt": prompt,
-            "stream": False,
-            "think": False,
-            "options": {
-                "temperature": 0.1,
-                "num_predict": 500
-            }
-        },
-        timeout=300
-    )
-
-    response.raise_for_status()
-
-    return response.json()["response"].strip()
+def _clean_sql(text):
+    text = text.replace("```sql", "").replace("```", "").strip()
+    match = re.search(r"(SELECT\s+.*?)(?:;|$)", text, re.IGNORECASE | re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return text
 
 
 def planning_node(state):
-
     schema = get_schema()
 
     prompt = f"""
@@ -59,40 +49,51 @@ Do not use markdown.
 Do not explain.
 """
 
-    sql = ask_llm(prompt)
-
-    sql = sql.replace(
-        "```sql", ""
-    ).replace(
-        "```", ""
-    ).strip()
+    try:
+        sql = _clean_sql(ask_llm(prompt))
+        state.steps.append("Planner: LLM generated SQL")
+    except LLMUnavailable:
+        sql = generate_sql_offline(state.question, schema)
+        state.steps.append("Planner: offline rule-based SQL generator")
 
     state.sql = sql
-
-    state.steps.append(
-        f"Generated SQL: {sql}"
-    )
+    state.steps.append(f"Generated SQL: {sql}")
 
     return state
 
 
 def execution_node(state):
-
-    result = execute_query(
-        state.sql
-    )
-
-    state.result = result
-
-    state.steps.append(
-        f"SQL Result: {result}"
-    )
+    try:
+        result = execute_query(state.sql)
+        state.result = result
+        state.steps.append(f"SQL Result: {result}")
+    except Exception as error:  # noqa: BLE001 - agent observes tool errors
+        state.result = []
+        state.steps.append(f"SQL Error: {error}")
 
     return state
 
 
-def answer_node(state):
+def _offline_answer(question, sql, result):  # noqa: ARG001
+    if not result:
+        return "No records matched the question."
 
+    if len(result) == 1 and len(result[0]) == 1:
+        value = next(iter(result[0].values()))
+        return f"The answer is {value}."
+
+    lines = [f"Based on the database, {len(result)} record(s) were found:"]
+    for row in result[:10]:
+        values = ", ".join(f"{key}: {value}" for key, value in row.items())
+        lines.append(f"- {values}")
+
+    if len(result) > 10:
+        lines.append(f"... and {len(result) - 10} more.")
+
+    return "\n".join(lines)
+
+
+def answer_node(state):
     prompt = f"""
 You are a database assistant.
 
@@ -103,7 +104,7 @@ SQL QUERY:
 {state.sql}
 
 DATABASE RESULT:
-{json.dumps(state.result, indent=2)}
+{json.dumps(state.result, indent=2, default=str)}
 
 Answer the user clearly.
 
@@ -111,10 +112,13 @@ Do not mention internal tools.
 Do not invent information.
 """
 
-    state.answer = ask_llm(prompt)
+    try:
+        state.answer = ask_llm(prompt)
+        state.steps.append("Answer: LLM generated")
+    except LLMUnavailable:
+        state.answer = _offline_answer(state.question, state.sql, state.result)
+        state.steps.append("Answer: offline formatter")
 
-    state.steps.append(
-        f"Final Answer: {state.answer}"
-    )
+    state.steps.append(f"Final Answer: {state.answer}")
 
     return state

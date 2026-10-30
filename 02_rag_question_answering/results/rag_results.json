@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What is agentic AI?",
+    "answer": "Agentic AI Agentic AI refers to artificial intelligence systems that can autonomously perform tasks by reasoning about goals, making decisions, using tools, and adapting their actions based on results. Agentic systems can use tools such as databases, APIs, search engines, calculators, and file systems.\n\nSources: document1.txt",
+    "sources": [
+      {
+        "source": "document1.txt",
+        "score": 0.2721
+      },
+      {
+        "source": "document3.txt",
+        "score": 0.0
+      },
+      {
+        "source": "document3.txt",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "question": "How does Retrieval Augmented Generation work?",
+    "answer": "Retrieval Augmented Generation Retrieval Augmented Generation, commonly called RAG, combines information retrieval with language model generation. Retrieval Augmented Generation can reduce this problem by providing relevant external information to the model. LLMs can perform tasks such as question answering, summarization, translation, classification, code generation, and information extraction.\n\nSources: document2.txt, document3.txt",
+    "sources": [
+      {
+        "source": "document2.txt",
+        "score": 0.1895
+      },
+      {
+        "source": "document3.txt",
+        "score": 0.0258
+      },
+      {
+        "source": "document1.txt",
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "question": "Why can large language models generate incorrect information?",
+    "answer": "Large Language Models Large Language Models are machine learning models trained on large collections of text. LLMs can sometimes generate incorrect information when they do not have sufficient context. The retrieved information is then provided to a language model as context.\n\nSources: document3.txt, document2.txt",
+    "sources": [
+      {
+        "source": "document3.txt",
+        "score": 0.5074
+      },
+      {
+        "source": "document3.txt",
+        "score": 0.154
+      },
+      {
+        "source": "document2.txt",
+        "score": 0.0742
+      }
+    ]
+  },
+  {
+    "question": "What are the benefits of running models locally?",
+    "answer": "Running models locally can provide greater control over data and infrastructure. Local models can be run using frameworks such as Ollama.\n\nSources: document3.txt",
+    "sources": [
+      {
+        "source": "document3.txt",
+        "score": 0.2694
+      },
+      {
+        "source": "document2.txt",
+        "score": 0.1731
+      },
+      {
+        "source": "document1.txt",
+        "score": 0.1301
+      }
+    ]
+  }
+]

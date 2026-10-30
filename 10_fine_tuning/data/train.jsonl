@@ -1,0 +1,250 @@
+{"text": "Incident report: malicious macro executes when the document opens; observed in the email gateway.", "label": "malware"}
+{"text": "Telemetry: firewall rule change approved by the change board; flagged during triage.", "label": "benign"}
+{"text": "Case note: command and control beacon contacts a rare external domain; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: departing employee downloaded sensitive documents; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: firewall rule change approved by the change board; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: UDP reflection attack targets the public gateway; reported by the service desk.", "label": "ddos"}
+{"text": "SOC ticket: NTP monlist reflection floods the perimeter; flagged during triage.", "label": "ddos"}
+{"text": "Alert: firewall rule change approved by the change board; flagged during triage.", "label": "benign"}
+{"text": "Case note: MFA enrollment completed for a new employee; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: employee disabled audit logging on a production host; flagged during triage.", "label": "insider"}
+{"text": "Alert: HTTP request flood exhausts the web tier; detected on an endpoint.", "label": "ddos"}
+{"text": "Alert: user reports a suspicious DocuSign notification; observed in the email gateway.", "label": "phishing"}
+{"text": "Telemetry: user shared admin credentials with a colleague; detected on an endpoint.", "label": "insider"}
+{"text": "Alert: email gateway flags a display-name spoof; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: contractor exfiltrated source code before offboarding; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: approved software update installed on endpoints; detected on an endpoint.", "label": "benign"}
+{"text": "Telemetry: approved software update installed on endpoints; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: MFA enrollment completed for a new employee; correlated with identity logs.", "label": "benign"}
+{"text": "Telemetry: employee disabled audit logging on a production host; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: departing employee downloaded sensitive documents; correlated with identity logs.", "label": "insider"}
+{"text": "Alert: phishing kit clones the corporate SSO page; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Case note: password reset verified by the service desk; detected on an endpoint.", "label": "benign"}
+{"text": "Case note: MFA enrollment completed for a new employee; reported by the service desk.", "label": "benign"}
+{"text": "Case note: urgent password reset message with a shortened URL; detected on an endpoint.", "label": "phishing"}
+{"text": "SOC ticket: lookalike domain imitates the identity provider; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Alert: volumetric SYN flood saturates the edge router; reported by the service desk.", "label": "ddos"}
+{"text": "Case note: lookalike domain imitates the identity provider; correlated with identity logs.", "label": "phishing"}
+{"text": "Case note: user reports a suspicious DocuSign notification; detected on an endpoint.", "label": "phishing"}
+{"text": "Incident report: approved software update installed on endpoints; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: worm spreads through removable media; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Case note: ransomware encrypted the shared finance drive; correlated with identity logs.", "label": "malware"}
+{"text": "Case note: slowloris connections exhaust the connection pool; detected on an endpoint.", "label": "ddos"}
+{"text": "Telemetry: trojan dropped a second-stage payload from a temp directory; correlated with identity logs.", "label": "malware"}
+{"text": "Case note: phishing kit clones the corporate SSO page; detected on an endpoint.", "label": "phishing"}
+{"text": "Alert: phishing kit clones the corporate SSO page; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: credential stealer reads browser password stores; reported by the service desk.", "label": "malware"}
+{"text": "Case note: MFA enrollment completed for a new employee; reported by the service desk.", "label": "benign"}
+{"text": "SOC ticket: routine log rotation removed old archives; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Telemetry: firewall rule change approved by the change board; detected on an endpoint.", "label": "benign"}
+{"text": "Alert: command and control beacon contacts a rare external domain; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: employee disabled audit logging on a production host; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Case note: credential stealer reads browser password stores; flagged during triage.", "label": "malware"}
+{"text": "Alert: password reset verified by the service desk; flagged during triage.", "label": "benign"}
+{"text": "Alert: approved software update installed on endpoints; detected on an endpoint.", "label": "benign"}
+{"text": "Alert: urgent password reset message with a shortened URL; observed in the email gateway.", "label": "phishing"}
+{"text": "Alert: UDP reflection attack targets the public gateway; detected on an endpoint.", "label": "ddos"}
+{"text": "Case note: HTTP request flood exhausts the web tier; detected on an endpoint.", "label": "ddos"}
+{"text": "Alert: network link saturation triggers upstream scrubbing; reported by the service desk.", "label": "ddos"}
+{"text": "Telemetry: urgent password reset message with a shortened URL; reported by the service desk.", "label": "phishing"}
+{"text": "SOC ticket: user shared admin credentials with a colleague; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Incident report: email impersonates the payroll portal and requests credentials; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: trojan dropped a second-stage payload from a temp directory; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: analyst queried records outside their assigned region; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Incident report: EDR quarantines a signed binary with a known malicious hash; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Alert: EDR quarantines a signed binary with a known malicious hash; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: asset inventory sync ran on schedule; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: insider altered financial records to hide a transfer; observed in the email gateway.", "label": "insider"}
+{"text": "Telemetry: business email compromise requests a wire transfer; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: security awareness training completed by the team; correlated with identity logs.", "label": "benign"}
+{"text": "Telemetry: remote access trojan persists through a scheduled task; reported by the service desk.", "label": "malware"}
+{"text": "Case note: user shared admin credentials with a colleague; observed in the email gateway.", "label": "insider"}
+{"text": "SOC ticket: analyst queried records outside their assigned region; correlated with identity logs.", "label": "insider"}
+{"text": "Incident report: employee copied the customer database to a USB drive; flagged during triage.", "label": "insider"}
+{"text": "Case note: command and control beacon contacts a rare external domain; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: application-layer attack overwhelms the login endpoint; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "SOC ticket: command and control beacon contacts a rare external domain; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: malicious macro executes when the document opens; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: HTTP request flood exhausts the web tier; reported by the service desk.", "label": "ddos"}
+{"text": "Alert: network link saturation triggers upstream scrubbing; correlated with identity logs.", "label": "ddos"}
+{"text": "Telemetry: lookalike domain imitates the identity provider; correlated with identity logs.", "label": "phishing"}
+{"text": "Incident report: slowloris connections exhaust the connection pool; reported by the service desk.", "label": "ddos"}
+{"text": "SOC ticket: command and control beacon contacts a rare external domain; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: smishing campaign targets employees with MFA prompts; flagged during triage.", "label": "phishing"}
+{"text": "Telemetry: privileged account accessed payroll records after hours; detected on an endpoint.", "label": "insider"}
+{"text": "Telemetry: invoice attachment contains a link to a fake login page; flagged during triage.", "label": "phishing"}
+{"text": "Telemetry: service account used from an unusual workstation; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: ransomware encrypted the shared finance drive; reported by the service desk.", "label": "malware"}
+{"text": "Case note: user reports a suspicious DocuSign notification; correlated with identity logs.", "label": "phishing"}
+{"text": "Telemetry: urgent password reset message with a shortened URL; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: authenticated vulnerability scan finished with no findings; flagged during triage.", "label": "benign"}
+{"text": "Telemetry: traffic spike from thousands of compromised hosts; flagged during triage.", "label": "ddos"}
+{"text": "Case note: authenticated vulnerability scan finished with no findings; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Telemetry: scheduled backup completed successfully; detected on an endpoint.", "label": "benign"}
+{"text": "Case note: lookalike domain imitates the identity provider; detected on an endpoint.", "label": "phishing"}
+{"text": "Incident report: phishing kit clones the corporate SSO page; observed in the email gateway.", "label": "phishing"}
+{"text": "Incident report: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: malicious macro executes when the document opens; reported by the service desk.", "label": "malware"}
+{"text": "Incident report: network link saturation triggers upstream scrubbing; detected on an endpoint.", "label": "ddos"}
+{"text": "Incident report: DNS amplification traffic spikes to 40 Gbps; correlated with identity logs.", "label": "ddos"}
+{"text": "SOC ticket: privileged account accessed payroll records after hours; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: DNS amplification traffic spikes to 40 Gbps; observed in the email gateway.", "label": "ddos"}
+{"text": "Case note: volumetric SYN flood saturates the edge router; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Incident report: approved software update installed on endpoints; observed in the email gateway.", "label": "benign"}
+{"text": "SOC ticket: invoice attachment contains a link to a fake login page; reported by the service desk.", "label": "phishing"}
+{"text": "Case note: command and control beacon contacts a rare external domain; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Case note: MFA enrollment completed for a new employee; flagged during triage.", "label": "benign"}
+{"text": "SOC ticket: scheduled backup completed successfully; reported by the service desk.", "label": "benign"}
+{"text": "Incident report: employee disabled audit logging on a production host; detected on an endpoint.", "label": "insider"}
+{"text": "Alert: analyst queried records outside their assigned region; observed in the email gateway.", "label": "insider"}
+{"text": "Telemetry: credential harvesting page linked from a spoofed sender domain; flagged during triage.", "label": "phishing"}
+{"text": "Incident report: credential harvesting page linked from a spoofed sender domain; observed in the email gateway.", "label": "phishing"}
+{"text": "Case note: application-layer attack overwhelms the login endpoint; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: traffic spike from thousands of compromised hosts; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: employee copied the customer database to a USB drive; flagged during triage.", "label": "insider"}
+{"text": "Alert: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}
+{"text": "Telemetry: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}
+{"text": "Alert: smishing campaign targets employees with MFA prompts; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: traffic spike from thousands of compromised hosts; correlated with identity logs.", "label": "ddos"}
+{"text": "SOC ticket: phishing kit clones the corporate SSO page; flagged during triage.", "label": "phishing"}
+{"text": "SOC ticket: EDR quarantines a signed binary with a known malicious hash; reported by the service desk.", "label": "malware"}
+{"text": "Telemetry: employee copied the customer database to a USB drive; flagged during triage.", "label": "insider"}
+{"text": "Case note: departing employee downloaded sensitive documents; correlated with identity logs.", "label": "insider"}
+{"text": "SOC ticket: service account used from an unusual workstation; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Alert: authenticated vulnerability scan finished with no findings; correlated with identity logs.", "label": "benign"}
+{"text": "SOC ticket: departing employee downloaded sensitive documents; reported by the service desk.", "label": "insider"}
+{"text": "Alert: insider altered financial records to hide a transfer; correlated with identity logs.", "label": "insider"}
+{"text": "Incident report: application-layer attack overwhelms the login endpoint; reported by the service desk.", "label": "ddos"}
+{"text": "SOC ticket: fileless malware injected into a running process; flagged during triage.", "label": "malware"}
+{"text": "Case note: firewall rule change approved by the change board; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: contractor exfiltrated source code before offboarding; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Alert: NTP monlist reflection floods the perimeter; correlated with identity logs.", "label": "ddos"}
+{"text": "SOC ticket: keylogger installed as a browser extension; reported by the service desk.", "label": "malware"}
+{"text": "Telemetry: volumetric SYN flood saturates the edge router; flagged during triage.", "label": "ddos"}
+{"text": "SOC ticket: employee copied the customer database to a USB drive; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: security awareness training completed by the team; flagged during triage.", "label": "benign"}
+{"text": "Incident report: service account used from an unusual workstation; seen in the cloud audit trail.", "label": "insider"}
+{"text": "SOC ticket: analyst queried records outside their assigned region; reported by the service desk.", "label": "insider"}
+{"text": "Alert: phishing kit clones the corporate SSO page; correlated with identity logs.", "label": "phishing"}
+{"text": "SOC ticket: keylogger installed as a browser extension; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}
+{"text": "Alert: smishing campaign targets employees with MFA prompts; detected on an endpoint.", "label": "phishing"}
+{"text": "SOC ticket: slowloris connections exhaust the connection pool; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Case note: user shared admin credentials with a colleague; detected on an endpoint.", "label": "insider"}
+{"text": "Case note: lookalike domain imitates the identity provider; observed in the email gateway.", "label": "phishing"}
+{"text": "Alert: scheduled backup completed successfully; flagged during triage.", "label": "benign"}
+{"text": "Telemetry: password reset verified by the service desk; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Incident report: user shared admin credentials with a colleague; flagged during triage.", "label": "insider"}
+{"text": "Alert: DNS amplification traffic spikes to 40 Gbps; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Case note: volumetric SYN flood saturates the edge router; detected on an endpoint.", "label": "ddos"}
+{"text": "SOC ticket: botnet traffic causes service unavailable errors; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Telemetry: NTP monlist reflection floods the perimeter; correlated with identity logs.", "label": "ddos"}
+{"text": "Incident report: smishing campaign targets employees with MFA prompts; observed in the email gateway.", "label": "phishing"}
+{"text": "SOC ticket: phishing kit clones the corporate SSO page; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: DNS amplification traffic spikes to 40 Gbps; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: NTP monlist reflection floods the perimeter; observed in the email gateway.", "label": "ddos"}
+{"text": "Alert: privileged account accessed payroll records after hours; correlated with identity logs.", "label": "insider"}
+{"text": "SOC ticket: password reset verified by the service desk; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: scheduled backup completed successfully; reported by the service desk.", "label": "benign"}
+{"text": "Alert: phishing kit clones the corporate SSO page; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: fileless malware injected into a running process; correlated with identity logs.", "label": "malware"}
+{"text": "Incident report: employee disabled audit logging on a production host; observed in the email gateway.", "label": "insider"}
+{"text": "Telemetry: DNS amplification traffic spikes to 40 Gbps; detected on an endpoint.", "label": "ddos"}
+{"text": "Incident report: authenticated vulnerability scan finished with no findings; observed in the email gateway.", "label": "benign"}
+{"text": "Alert: routine log rotation removed old archives; detected on an endpoint.", "label": "benign"}
+{"text": "Case note: scheduled backup completed successfully; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: contractor exfiltrated source code before offboarding; correlated with identity logs.", "label": "insider"}
+{"text": "Alert: volumetric SYN flood saturates the edge router; observed in the email gateway.", "label": "ddos"}
+{"text": "Incident report: worm spreads through removable media; seen in the cloud audit trail.", "label": "malware"}
+{"text": "SOC ticket: authenticated vulnerability scan finished with no findings; flagged during triage.", "label": "benign"}
+{"text": "Telemetry: approved software update installed on endpoints; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Incident report: phishing kit clones the corporate SSO page; observed in the email gateway.", "label": "phishing"}
+{"text": "SOC ticket: traffic spike from thousands of compromised hosts; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Telemetry: ransomware encrypted the shared finance drive; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Case note: network link saturation triggers upstream scrubbing; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Telemetry: command and control beacon contacts a rare external domain; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: application-layer attack overwhelms the login endpoint; correlated with identity logs.", "label": "ddos"}
+{"text": "Case note: smishing campaign targets employees with MFA prompts; correlated with identity logs.", "label": "phishing"}
+{"text": "SOC ticket: MFA enrollment completed for a new employee; flagged during triage.", "label": "benign"}
+{"text": "Case note: keylogger installed as a browser extension; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: employee copied the customer database to a USB drive; flagged during triage.", "label": "insider"}
+{"text": "SOC ticket: remote access trojan persists through a scheduled task; correlated with identity logs.", "label": "malware"}
+{"text": "Incident report: UDP reflection attack targets the public gateway; flagged during triage.", "label": "ddos"}
+{"text": "SOC ticket: NTP monlist reflection floods the perimeter; detected on an endpoint.", "label": "ddos"}
+{"text": "SOC ticket: email impersonates the payroll portal and requests credentials; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "SOC ticket: email impersonates the payroll portal and requests credentials; reported by the service desk.", "label": "phishing"}
+{"text": "Alert: insider altered financial records to hide a transfer; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: network link saturation triggers upstream scrubbing; observed in the email gateway.", "label": "ddos"}
+{"text": "Telemetry: contractor exfiltrated source code before offboarding; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Telemetry: business email compromise requests a wire transfer; reported by the service desk.", "label": "phishing"}
+{"text": "SOC ticket: user shared admin credentials with a colleague; seen in the cloud audit trail.", "label": "insider"}
+{"text": "SOC ticket: slowloris connections exhaust the connection pool; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "SOC ticket: routine log rotation removed old archives; correlated with identity logs.", "label": "benign"}
+{"text": "Telemetry: volumetric SYN flood saturates the edge router; observed in the email gateway.", "label": "ddos"}
+{"text": "Alert: trojan dropped a second-stage payload from a temp directory; detected on an endpoint.", "label": "malware"}
+{"text": "Alert: smishing campaign targets employees with MFA prompts; flagged during triage.", "label": "phishing"}
+{"text": "Telemetry: EDR quarantines a signed binary with a known malicious hash; reported by the service desk.", "label": "malware"}
+{"text": "Alert: employee copied the customer database to a USB drive; observed in the email gateway.", "label": "insider"}
+{"text": "Alert: remote access trojan persists through a scheduled task; correlated with identity logs.", "label": "malware"}
+{"text": "Incident report: user reports a suspicious DocuSign notification; correlated with identity logs.", "label": "phishing"}
+{"text": "Telemetry: malicious macro executes when the document opens; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: traffic spike from thousands of compromised hosts; reported by the service desk.", "label": "ddos"}
+{"text": "Case note: credential stealer reads browser password stores; reported by the service desk.", "label": "malware"}
+{"text": "SOC ticket: lookalike domain imitates the identity provider; flagged during triage.", "label": "phishing"}
+{"text": "Case note: business email compromise requests a wire transfer; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Alert: ransomware encrypted the shared finance drive; reported by the service desk.", "label": "malware"}
+{"text": "Alert: asset inventory sync ran on schedule; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: departing employee downloaded sensitive documents; detected on an endpoint.", "label": "insider"}
+{"text": "Case note: UDP reflection attack targets the public gateway; detected on an endpoint.", "label": "ddos"}
+{"text": "Telemetry: MFA enrollment completed for a new employee; reported by the service desk.", "label": "benign"}
+{"text": "Case note: asset inventory sync ran on schedule; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Alert: insider altered financial records to hide a transfer; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Case note: network link saturation triggers upstream scrubbing; detected on an endpoint.", "label": "ddos"}
+{"text": "Alert: email gateway flags a display-name spoof; flagged during triage.", "label": "phishing"}
+{"text": "SOC ticket: NTP monlist reflection floods the perimeter; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Alert: approved software update installed on endpoints; detected on an endpoint.", "label": "benign"}
+{"text": "Case note: user shared admin credentials with a colleague; detected on an endpoint.", "label": "insider"}
+{"text": "Telemetry: contractor exfiltrated source code before offboarding; observed in the email gateway.", "label": "insider"}
+{"text": "Case note: ransomware encrypted the shared finance drive; detected on an endpoint.", "label": "malware"}
+{"text": "Telemetry: invoice attachment contains a link to a fake login page; detected on an endpoint.", "label": "phishing"}
+{"text": "SOC ticket: password reset verified by the service desk; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: keylogger installed as a browser extension; reported by the service desk.", "label": "malware"}
+{"text": "SOC ticket: worm spreads through removable media; flagged during triage.", "label": "malware"}
+{"text": "Telemetry: smishing campaign targets employees with MFA prompts; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: lookalike domain imitates the identity provider; observed in the email gateway.", "label": "phishing"}
+{"text": "SOC ticket: asset inventory sync ran on schedule; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: insider altered financial records to hide a transfer; detected on an endpoint.", "label": "insider"}
+{"text": "Incident report: invoice attachment contains a link to a fake login page; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: business email compromise requests a wire transfer; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Case note: approved software update installed on endpoints; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: data hoarding detected in a personal cloud folder; observed in the email gateway.", "label": "insider"}
+{"text": "Alert: endpoint agent updated its signature database; correlated with identity logs.", "label": "benign"}
+{"text": "Case note: smishing campaign targets employees with MFA prompts; observed in the email gateway.", "label": "phishing"}
+{"text": "Telemetry: urgent password reset message with a shortened URL; flagged during triage.", "label": "phishing"}
+{"text": "Case note: NTP monlist reflection floods the perimeter; detected on an endpoint.", "label": "ddos"}
+{"text": "SOC ticket: insider altered financial records to hide a transfer; correlated with identity logs.", "label": "insider"}
+{"text": "SOC ticket: fileless malware injected into a running process; observed in the email gateway.", "label": "malware"}
+{"text": "Incident report: service account used from an unusual workstation; reported by the service desk.", "label": "insider"}
+{"text": "Alert: DNS amplification traffic spikes to 40 Gbps; detected on an endpoint.", "label": "ddos"}
+{"text": "Telemetry: business email compromise requests a wire transfer; correlated with identity logs.", "label": "phishing"}
+{"text": "Case note: authenticated vulnerability scan finished with no findings; observed in the email gateway.", "label": "benign"}
+{"text": "Alert: application-layer attack overwhelms the login endpoint; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Incident report: EDR quarantines a signed binary with a known malicious hash; reported by the service desk.", "label": "malware"}
+{"text": "Alert: data hoarding detected in a personal cloud folder; reported by the service desk.", "label": "insider"}
+{"text": "Telemetry: security awareness training completed by the team; flagged during triage.", "label": "benign"}
+{"text": "Telemetry: departing employee downloaded sensitive documents; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Alert: credential stealer reads browser password stores; detected on an endpoint.", "label": "malware"}
+{"text": "SOC ticket: volumetric SYN flood saturates the edge router; observed in the email gateway.", "label": "ddos"}
+{"text": "Alert: invoice attachment contains a link to a fake login page; correlated with identity logs.", "label": "phishing"}
+{"text": "Case note: authenticated vulnerability scan finished with no findings; reported by the service desk.", "label": "benign"}
+{"text": "Incident report: HTTP request flood exhausts the web tier; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Alert: EDR quarantines a signed binary with a known malicious hash; flagged during triage.", "label": "malware"}
+{"text": "Incident report: fileless malware injected into a running process; detected on an endpoint.", "label": "malware"}
+{"text": "SOC ticket: analyst queried records outside their assigned region; flagged during triage.", "label": "insider"}
+{"text": "Alert: endpoint agent updated its signature database; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: trojan dropped a second-stage payload from a temp directory; detected on an endpoint.", "label": "malware"}
+{"text": "SOC ticket: scheduled backup completed successfully; reported by the service desk.", "label": "benign"}
+{"text": "Case note: service account used from an unusual workstation; flagged during triage.", "label": "insider"}
+{"text": "SOC ticket: DNS amplification traffic spikes to 40 Gbps; reported by the service desk.", "label": "ddos"}
+{"text": "Case note: malicious macro executes when the document opens; flagged during triage.", "label": "malware"}

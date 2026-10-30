@@ -1,0 +1,116 @@
+[
+  {
+    "question": "How many employees are there in each department?",
+    "sql": "SELECT d.name AS department, COUNT(e.id) AS employee_count FROM departments d LEFT JOIN employees e ON e.department_id = d.id GROUP BY d.id, d.name ORDER BY employee_count DESC",
+    "rows": [
+      {
+        "department": "Engineering",
+        "employee_count": 3
+      },
+      {
+        "department": "Security",
+        "employee_count": 3
+      },
+      {
+        "department": "Marketing",
+        "employee_count": 2
+      },
+      {
+        "department": "Finance",
+        "employee_count": 2
+      }
+    ],
+    "error": null
+  },
+  {
+    "question": "What is the average salary by department?",
+    "sql": "SELECT d.name AS department, ROUND(AVG(e.salary), 2) AS average_salary FROM employees e JOIN departments d ON d.id = e.department_id GROUP BY d.id, d.name ORDER BY average_salary DESC",
+    "rows": [
+      {
+        "department": "Finance",
+        "average_salary": 127500.0
+      },
+      {
+        "department": "Security",
+        "average_salary": 106666.67
+      },
+      {
+        "department": "Engineering",
+        "average_salary": 90000.0
+      },
+      {
+        "department": "Marketing",
+        "average_salary": 90000.0
+      }
+    ],
+    "error": null
+  },
+  {
+    "question": "Which employees earn more than 100000?",
+    "sql": "SELECT e.name, d.name AS department, e.position, e.salary FROM employees e JOIN departments d ON d.id = e.department_id WHERE e.salary > 100000 ORDER BY e.salary DESC",
+    "rows": [
+      {
+        "name": "Sanjay",
+        "department": "Finance",
+        "position": "Finance Manager",
+        "salary": 150000.0
+      },
+      {
+        "name": "Kiran",
+        "department": "Security",
+        "position": "Security Engineer",
+        "salary": 135000.0
+      },
+      {
+        "name": "Rahul",
+        "department": "Engineering",
+        "position": "Senior Engineer",
+        "salary": 120000.0
+      },
+      {
+        "name": "Sneha",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 110000.0
+      },
+      {
+        "name": "Vikram",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 105000.0
+      }
+    ],
+    "error": null
+  },
+  {
+    "question": "List all active projects with their department names.",
+    "sql": "SELECT p.name AS project, d.name AS department, p.budget, p.status FROM projects p JOIN departments d ON d.id = p.department_id WHERE p.status = 'Active' ORDER BY p.budget DESC",
+    "rows": [
+      {
+        "project": "AI Platform",
+        "department": "Engineering",
+        "budget": 500000.0,
+        "status": "Active"
+      },
+      {
+        "project": "SOC Automation",
+        "department": "Security",
+        "budget": 350000.0,
+        "status": "Active"
+      }
+    ],
+    "error": null
+  },
+  {
+    "question": "Who has the most experience?",
+    "sql": "SELECT name, position, experience FROM employees ORDER BY experience DESC LIMIT 1",
+    "rows": [
+      {
+        "name": "Sanjay",
+        "position": "Finance Manager",
+        "experience": 12
+      }
+    ],
+    "error": null
+  }
+]

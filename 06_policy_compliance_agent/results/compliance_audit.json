@@ -1,0 +1,796 @@
+{
+  "summary": {
+    "records": 12,
+    "compliant_records": 2,
+    "non_compliant_records": 10,
+    "compliance_rate": 16.7,
+    "total_violations": 26,
+    "decision_counts": {
+      "APPROVE": 2,
+      "REJECT": 5,
+      "REVIEW": 5
+    },
+    "policy_hits": {
+      "POL-001": 2,
+      "POL-002": 5,
+      "POL-003": 1,
+      "POL-004": 3,
+      "POL-005": 2,
+      "POL-006": 1,
+      "POL-007": 3,
+      "POL-008": 5,
+      "POL-009": 3,
+      "POL-010": 1
+    },
+    "average_risk_score": 35.3
+  },
+  "decisions": {
+    "APPROVE": 2,
+    "REVIEW": 5,
+    "REJECT": 5
+  },
+  "results": [
+    {
+      "record_id": "EMP001",
+      "name": "Priya Nair",
+      "department": "Security",
+      "role": "Security Engineer",
+      "violations": [],
+      "violation_count": 0,
+      "severity_counts": {},
+      "risk_score": 0,
+      "compliant": true,
+      "decision": {
+        "decision": "APPROVE",
+        "reason": "No policy violations were detected; the record is compliant.",
+        "risk_score": 0,
+        "next_action": "No action required. Re-audit at the next scheduled review.",
+        "remediation": []
+      }
+    },
+    {
+      "record_id": "EMP002",
+      "name": "Rahul Sharma",
+      "department": "Finance",
+      "role": "Financial Analyst",
+      "violations": [
+        {
+          "policy_id": "POL-002",
+          "policy_name": "Security Awareness Training",
+          "severity": "medium",
+          "framework": "ISO 27001 A.7.2.2",
+          "description": "Security awareness training must be completed every 180 days.",
+          "remediation": "Schedule the overdue awareness training module.",
+          "evidence": [
+            {
+              "field": "last_training_days",
+              "actual": 220,
+              "expected": "gt 180"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-004",
+          "policy_name": "Encryption of Sensitive Data",
+          "severity": "critical",
+          "framework": "ISO 27001 A.10.1 / GDPR Art. 32",
+          "description": "PII and Restricted data must be encrypted at rest.",
+          "remediation": "Enable encryption at rest before further processing.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "Restricted",
+              "expected": "in ['PII', 'Restricted']"
+            },
+            {
+              "field": "encryption_at_rest",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-007",
+          "policy_name": "MFA for Remote Access",
+          "severity": "high",
+          "framework": "NIST IA-2(1)",
+          "description": "Remote access requires multi-factor authentication.",
+          "remediation": "Enforce MFA on the remote access gateway.",
+          "evidence": [
+            {
+              "field": "remote_access",
+              "actual": true,
+              "expected": "eq True"
+            },
+            {
+              "field": "mfa_enabled",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-008",
+          "policy_name": "Password Rotation",
+          "severity": "low",
+          "framework": "CIS Control 5.2",
+          "description": "Passwords older than 90 days must be rotated.",
+          "remediation": "Prompt the user to rotate the password.",
+          "evidence": [
+            {
+              "field": "password_age_days",
+              "actual": 120,
+              "expected": "gt 90"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-009",
+          "policy_name": "Restricted Data Retention",
+          "severity": "medium",
+          "framework": "GDPR Art. 5(1)(e)",
+          "description": "Restricted data must not be retained beyond 365 days.",
+          "remediation": "Purge or archive the data under the retention policy.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "Restricted",
+              "expected": "eq Restricted"
+            },
+            {
+              "field": "retention_days",
+              "actual": 400,
+              "expected": "gt 365"
+            }
+          ]
+        }
+      ],
+      "violation_count": 5,
+      "severity_counts": {
+        "medium": 2,
+        "critical": 1,
+        "high": 1,
+        "low": 1
+      },
+      "risk_score": 94,
+      "compliant": false,
+      "decision": {
+        "decision": "REJECT",
+        "reason": "1 critical violation(s) require immediate remediation: POL-004",
+        "risk_score": 94,
+        "next_action": "Suspend access, open a P1 remediation ticket and notify the CISO.",
+        "remediation": [
+          "Schedule the overdue awareness training module.",
+          "Enable encryption at rest before further processing.",
+          "Enforce MFA on the remote access gateway.",
+          "Prompt the user to rotate the password.",
+          "Purge or archive the data under the retention policy."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP003",
+      "name": "Kiran Rao",
+      "department": "Security",
+      "role": "Security Engineer",
+      "violations": [
+        {
+          "policy_id": "POL-005",
+          "policy_name": "Contractor Elevated Access",
+          "severity": "high",
+          "framework": "NIST AC-6(10)",
+          "description": "Contractors must not hold write or admin access without review.",
+          "remediation": "Downgrade access or document a time-bound exception.",
+          "evidence": [
+            {
+              "field": "employment_type",
+              "actual": "contractor",
+              "expected": "eq contractor"
+            },
+            {
+              "field": "access_level",
+              "actual": "admin",
+              "expected": "in ['write', 'admin']"
+            }
+          ]
+        }
+      ],
+      "violation_count": 1,
+      "severity_counts": {
+        "high": 1
+      },
+      "risk_score": 25,
+      "compliant": false,
+      "decision": {
+        "decision": "REVIEW",
+        "reason": "Risk score 25/100 and 1 policy violation(s) require manual review before access continues.",
+        "risk_score": 25,
+        "next_action": "Assign remediation owners and re-run the audit within 7 days.",
+        "remediation": [
+          "Downgrade access or document a time-bound exception."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP004",
+      "name": "Ananya Iyer",
+      "department": "HR",
+      "role": "HR Manager",
+      "violations": [
+        {
+          "policy_id": "POL-008",
+          "policy_name": "Password Rotation",
+          "severity": "low",
+          "framework": "CIS Control 5.2",
+          "description": "Passwords older than 90 days must be rotated.",
+          "remediation": "Prompt the user to rotate the password.",
+          "evidence": [
+            {
+              "field": "password_age_days",
+              "actual": 200,
+              "expected": "gt 90"
+            }
+          ]
+        }
+      ],
+      "violation_count": 1,
+      "severity_counts": {
+        "low": 1
+      },
+      "risk_score": 5,
+      "compliant": false,
+      "decision": {
+        "decision": "REVIEW",
+        "reason": "Risk score 5/100 and 1 policy violation(s) require manual review before access continues.",
+        "risk_score": 5,
+        "next_action": "Assign remediation owners and re-run the audit within 7 days.",
+        "remediation": [
+          "Prompt the user to rotate the password."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP005",
+      "name": "Vikram Singh",
+      "department": "IT",
+      "role": "IT Administrator",
+      "violations": [
+        {
+          "policy_id": "POL-001",
+          "policy_name": "MFA for Privileged Access",
+          "severity": "critical",
+          "framework": "ISO 27001 A.9.4 / NIST IA-2",
+          "description": "Privileged accounts must use multi-factor authentication.",
+          "remediation": "Enable MFA on the privileged account immediately.",
+          "evidence": [
+            {
+              "field": "privileged_access",
+              "actual": true,
+              "expected": "eq True"
+            },
+            {
+              "field": "mfa_enabled",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-002",
+          "policy_name": "Security Awareness Training",
+          "severity": "medium",
+          "framework": "ISO 27001 A.7.2.2",
+          "description": "Security awareness training must be completed every 180 days.",
+          "remediation": "Schedule the overdue awareness training module.",
+          "evidence": [
+            {
+              "field": "last_training_days",
+              "actual": 200,
+              "expected": "gt 180"
+            }
+          ]
+        }
+      ],
+      "violation_count": 2,
+      "severity_counts": {
+        "critical": 1,
+        "medium": 1
+      },
+      "risk_score": 52,
+      "compliant": false,
+      "decision": {
+        "decision": "REJECT",
+        "reason": "1 critical violation(s) require immediate remediation: POL-001",
+        "risk_score": 52,
+        "next_action": "Suspend access, open a P1 remediation ticket and notify the CISO.",
+        "remediation": [
+          "Enable MFA on the privileged account immediately.",
+          "Schedule the overdue awareness training module."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP006",
+      "name": "Meena Gupta",
+      "department": "Marketing",
+      "role": "Marketing Executive",
+      "violations": [
+        {
+          "policy_id": "POL-002",
+          "policy_name": "Security Awareness Training",
+          "severity": "medium",
+          "framework": "ISO 27001 A.7.2.2",
+          "description": "Security awareness training must be completed every 180 days.",
+          "remediation": "Schedule the overdue awareness training module.",
+          "evidence": [
+            {
+              "field": "last_training_days",
+              "actual": 400,
+              "expected": "gt 180"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-008",
+          "policy_name": "Password Rotation",
+          "severity": "low",
+          "framework": "CIS Control 5.2",
+          "description": "Passwords older than 90 days must be rotated.",
+          "remediation": "Prompt the user to rotate the password.",
+          "evidence": [
+            {
+              "field": "password_age_days",
+              "actual": 100,
+              "expected": "gt 90"
+            }
+          ]
+        }
+      ],
+      "violation_count": 2,
+      "severity_counts": {
+        "medium": 1,
+        "low": 1
+      },
+      "risk_score": 17,
+      "compliant": false,
+      "decision": {
+        "decision": "REVIEW",
+        "reason": "Risk score 17/100 and 2 policy violation(s) require manual review before access continues.",
+        "risk_score": 17,
+        "next_action": "Assign remediation owners and re-run the audit within 7 days.",
+        "remediation": [
+          "Schedule the overdue awareness training module.",
+          "Prompt the user to rotate the password."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP007",
+      "name": "Sanjay Verma",
+      "department": "Finance",
+      "role": "Finance Manager",
+      "violations": [
+        {
+          "policy_id": "POL-001",
+          "policy_name": "MFA for Privileged Access",
+          "severity": "critical",
+          "framework": "ISO 27001 A.9.4 / NIST IA-2",
+          "description": "Privileged accounts must use multi-factor authentication.",
+          "remediation": "Enable MFA on the privileged account immediately.",
+          "evidence": [
+            {
+              "field": "privileged_access",
+              "actual": true,
+              "expected": "eq True"
+            },
+            {
+              "field": "mfa_enabled",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-002",
+          "policy_name": "Security Awareness Training",
+          "severity": "medium",
+          "framework": "ISO 27001 A.7.2.2",
+          "description": "Security awareness training must be completed every 180 days.",
+          "remediation": "Schedule the overdue awareness training module.",
+          "evidence": [
+            {
+              "field": "last_training_days",
+              "actual": 500,
+              "expected": "gt 180"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-003",
+          "policy_name": "Least Privilege for Admin Access",
+          "severity": "high",
+          "framework": "NIST AC-6",
+          "description": "Admin access is limited to approved security and IT roles.",
+          "remediation": "Remove admin rights or move the user to an approved role.",
+          "evidence": [
+            {
+              "field": "access_level",
+              "actual": "admin",
+              "expected": "eq admin"
+            },
+            {
+              "field": "role",
+              "actual": "Finance Manager",
+              "expected": "not_in ['Security Engineer', 'IT Administrator', 'CISO', 'SOC Manager']"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-004",
+          "policy_name": "Encryption of Sensitive Data",
+          "severity": "critical",
+          "framework": "ISO 27001 A.10.1 / GDPR Art. 32",
+          "description": "PII and Restricted data must be encrypted at rest.",
+          "remediation": "Enable encryption at rest before further processing.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "Restricted",
+              "expected": "in ['PII', 'Restricted']"
+            },
+            {
+              "field": "encryption_at_rest",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-006",
+          "policy_name": "Dormant Account Containment",
+          "severity": "critical",
+          "framework": "CIS Control 5",
+          "description": "Disabled accounts must not retain active access.",
+          "remediation": "Revoke all sessions and tokens for the disabled account.",
+          "evidence": [
+            {
+              "field": "account_status",
+              "actual": "disabled",
+              "expected": "eq disabled"
+            },
+            {
+              "field": "active_access",
+              "actual": true,
+              "expected": "eq True"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-007",
+          "policy_name": "MFA for Remote Access",
+          "severity": "high",
+          "framework": "NIST IA-2(1)",
+          "description": "Remote access requires multi-factor authentication.",
+          "remediation": "Enforce MFA on the remote access gateway.",
+          "evidence": [
+            {
+              "field": "remote_access",
+              "actual": true,
+              "expected": "eq True"
+            },
+            {
+              "field": "mfa_enabled",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-008",
+          "policy_name": "Password Rotation",
+          "severity": "low",
+          "framework": "CIS Control 5.2",
+          "description": "Passwords older than 90 days must be rotated.",
+          "remediation": "Prompt the user to rotate the password.",
+          "evidence": [
+            {
+              "field": "password_age_days",
+              "actual": 300,
+              "expected": "gt 90"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-009",
+          "policy_name": "Restricted Data Retention",
+          "severity": "medium",
+          "framework": "GDPR Art. 5(1)(e)",
+          "description": "Restricted data must not be retained beyond 365 days.",
+          "remediation": "Purge or archive the data under the retention policy.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "Restricted",
+              "expected": "eq Restricted"
+            },
+            {
+              "field": "retention_days",
+              "actual": 800,
+              "expected": "gt 365"
+            }
+          ]
+        }
+      ],
+      "violation_count": 8,
+      "severity_counts": {
+        "critical": 3,
+        "medium": 2,
+        "high": 2,
+        "low": 1
+      },
+      "risk_score": 100,
+      "compliant": false,
+      "decision": {
+        "decision": "REJECT",
+        "reason": "3 critical violation(s) require immediate remediation: POL-001, POL-004, POL-006",
+        "risk_score": 100,
+        "next_action": "Suspend access, open a P1 remediation ticket and notify the CISO.",
+        "remediation": [
+          "Enable MFA on the privileged account immediately.",
+          "Schedule the overdue awareness training module.",
+          "Remove admin rights or move the user to an approved role.",
+          "Enable encryption at rest before further processing.",
+          "Revoke all sessions and tokens for the disabled account.",
+          "Enforce MFA on the remote access gateway.",
+          "Prompt the user to rotate the password.",
+          "Purge or archive the data under the retention policy."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP008",
+      "name": "Rohit Menon",
+      "department": "Support",
+      "role": "Support Analyst",
+      "violations": [
+        {
+          "policy_id": "POL-002",
+          "policy_name": "Security Awareness Training",
+          "severity": "medium",
+          "framework": "ISO 27001 A.7.2.2",
+          "description": "Security awareness training must be completed every 180 days.",
+          "remediation": "Schedule the overdue awareness training module.",
+          "evidence": [
+            {
+              "field": "last_training_days",
+              "actual": 250,
+              "expected": "gt 180"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-007",
+          "policy_name": "MFA for Remote Access",
+          "severity": "high",
+          "framework": "NIST IA-2(1)",
+          "description": "Remote access requires multi-factor authentication.",
+          "remediation": "Enforce MFA on the remote access gateway.",
+          "evidence": [
+            {
+              "field": "remote_access",
+              "actual": true,
+              "expected": "eq True"
+            },
+            {
+              "field": "mfa_enabled",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-008",
+          "policy_name": "Password Rotation",
+          "severity": "low",
+          "framework": "CIS Control 5.2",
+          "description": "Passwords older than 90 days must be rotated.",
+          "remediation": "Prompt the user to rotate the password.",
+          "evidence": [
+            {
+              "field": "password_age_days",
+              "actual": 150,
+              "expected": "gt 90"
+            }
+          ]
+        },
+        {
+          "policy_id": "POL-010",
+          "policy_name": "Vendor Access Review",
+          "severity": "medium",
+          "framework": "ISO 27001 A.15.2",
+          "description": "Vendor access must be reviewed at least every 90 days.",
+          "remediation": "Complete the vendor access recertification.",
+          "evidence": [
+            {
+              "field": "employment_type",
+              "actual": "vendor",
+              "expected": "eq vendor"
+            },
+            {
+              "field": "last_review_days",
+              "actual": 120,
+              "expected": "gt 90"
+            }
+          ]
+        }
+      ],
+      "violation_count": 4,
+      "severity_counts": {
+        "medium": 2,
+        "high": 1,
+        "low": 1
+      },
+      "risk_score": 54,
+      "compliant": false,
+      "decision": {
+        "decision": "REJECT",
+        "reason": "Risk score 54/100 exceeds the rejection threshold of 50 (1 high-severity violation(s)).",
+        "risk_score": 54,
+        "next_action": "Revoke elevated access and complete remediation before re-evaluation.",
+        "remediation": [
+          "Schedule the overdue awareness training module.",
+          "Enforce MFA on the remote access gateway.",
+          "Prompt the user to rotate the password.",
+          "Complete the vendor access recertification."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP009",
+      "name": "Sneha Kulkarni",
+      "department": "Finance",
+      "role": "Finance Manager",
+      "violations": [
+        {
+          "policy_id": "POL-009",
+          "policy_name": "Restricted Data Retention",
+          "severity": "medium",
+          "framework": "GDPR Art. 5(1)(e)",
+          "description": "Restricted data must not be retained beyond 365 days.",
+          "remediation": "Purge or archive the data under the retention policy.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "Restricted",
+              "expected": "eq Restricted"
+            },
+            {
+              "field": "retention_days",
+              "actual": 400,
+              "expected": "gt 365"
+            }
+          ]
+        }
+      ],
+      "violation_count": 1,
+      "severity_counts": {
+        "medium": 1
+      },
+      "risk_score": 12,
+      "compliant": false,
+      "decision": {
+        "decision": "REVIEW",
+        "reason": "Risk score 12/100 and 1 policy violation(s) require manual review before access continues.",
+        "risk_score": 12,
+        "next_action": "Assign remediation owners and re-run the audit within 7 days.",
+        "remediation": [
+          "Purge or archive the data under the retention policy."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP010",
+      "name": "Arun Joshi",
+      "department": "Engineering",
+      "role": "Software Engineer",
+      "violations": [
+        {
+          "policy_id": "POL-005",
+          "policy_name": "Contractor Elevated Access",
+          "severity": "high",
+          "framework": "NIST AC-6(10)",
+          "description": "Contractors must not hold write or admin access without review.",
+          "remediation": "Downgrade access or document a time-bound exception.",
+          "evidence": [
+            {
+              "field": "employment_type",
+              "actual": "contractor",
+              "expected": "eq contractor"
+            },
+            {
+              "field": "access_level",
+              "actual": "write",
+              "expected": "in ['write', 'admin']"
+            }
+          ]
+        }
+      ],
+      "violation_count": 1,
+      "severity_counts": {
+        "high": 1
+      },
+      "risk_score": 25,
+      "compliant": false,
+      "decision": {
+        "decision": "REVIEW",
+        "reason": "Risk score 25/100 and 1 policy violation(s) require manual review before access continues.",
+        "risk_score": 25,
+        "next_action": "Assign remediation owners and re-run the audit within 7 days.",
+        "remediation": [
+          "Downgrade access or document a time-bound exception."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP011",
+      "name": "Noor Ahmed",
+      "department": "Security",
+      "role": "Security Analyst",
+      "violations": [
+        {
+          "policy_id": "POL-004",
+          "policy_name": "Encryption of Sensitive Data",
+          "severity": "critical",
+          "framework": "ISO 27001 A.10.1 / GDPR Art. 32",
+          "description": "PII and Restricted data must be encrypted at rest.",
+          "remediation": "Enable encryption at rest before further processing.",
+          "evidence": [
+            {
+              "field": "data_classification",
+              "actual": "PII",
+              "expected": "in ['PII', 'Restricted']"
+            },
+            {
+              "field": "encryption_at_rest",
+              "actual": false,
+              "expected": "eq False"
+            }
+          ]
+        }
+      ],
+      "violation_count": 1,
+      "severity_counts": {
+        "critical": 1
+      },
+      "risk_score": 40,
+      "compliant": false,
+      "decision": {
+        "decision": "REJECT",
+        "reason": "1 critical violation(s) require immediate remediation: POL-004",
+        "risk_score": 40,
+        "next_action": "Suspend access, open a P1 remediation ticket and notify the CISO.",
+        "remediation": [
+          "Enable encryption at rest before further processing."
+        ]
+      }
+    },
+    {
+      "record_id": "EMP012",
+      "name": "Elena Rossi",
+      "department": "Security",
+      "role": "CISO",
+      "violations": [],
+      "violation_count": 0,
+      "severity_counts": {},
+      "risk_score": 0,
+      "compliant": true,
+      "decision": {
+        "decision": "APPROVE",
+        "reason": "No policy violations were detected; the record is compliant.",
+        "risk_score": 0,
+        "next_action": "No action required. Re-audit at the next scheduled review.",
+        "remediation": []
+      }
+    }
+  ]
+}

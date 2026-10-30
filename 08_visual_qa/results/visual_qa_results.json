@@ -1,0 +1,591 @@
+{
+  "images": [
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\01_red_circle.png",
+      "filename": "01_red_circle.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "circle",
+          "color": "red",
+          "area": 15597,
+          "bbox": [
+            58,
+            58,
+            198,
+            198
+          ],
+          "mean_rgb": [
+            220.0,
+            45.0,
+            45.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "red",
+      "dominant_shape": "circle",
+      "description": "The image contains a red circle."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\02_blue_square.png",
+      "filename": "02_blue_square.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "square",
+          "color": "blue",
+          "area": 19881,
+          "bbox": [
+            58,
+            58,
+            198,
+            198
+          ],
+          "mean_rgb": [
+            45.0,
+            85.0,
+            220.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "blue",
+      "dominant_shape": "square",
+      "description": "The image contains a blue square."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\03_green_triangle.png",
+      "filename": "03_green_triangle.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "triangle",
+          "color": "green",
+          "area": 12961,
+          "bbox": [
+            48,
+            48,
+            208,
+            208
+          ],
+          "mean_rgb": [
+            40.0,
+            170.0,
+            80.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "green",
+      "dominant_shape": "triangle",
+      "description": "The image contains a green triangle."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\04_yellow_star.png",
+      "filename": "04_yellow_star.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "star",
+          "color": "yellow",
+          "area": 8051,
+          "bbox": [
+            51,
+            48,
+            204,
+            192
+          ],
+          "mean_rgb": [
+            240.0,
+            200.0,
+            30.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "yellow",
+      "dominant_shape": "star",
+      "description": "The image contains a yellow star."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\05_purple_rectangle.png",
+      "filename": "05_purple_rectangle.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "rectangle",
+          "color": "purple",
+          "area": 18281,
+          "bbox": [
+            38,
+            78,
+            218,
+            178
+          ],
+          "mean_rgb": [
+            140.0,
+            60.0,
+            200.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "purple",
+      "dominant_shape": "rectangle",
+      "description": "The image contains a purple rectangle."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\06_red_circle_blue_square.png",
+      "filename": "06_red_circle_blue_square.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 2,
+      "objects": [
+        {
+          "shape": "circle",
+          "color": "red",
+          "area": 8005,
+          "bbox": [
+            22,
+            88,
+            122,
+            188
+          ],
+          "mean_rgb": [
+            220.0,
+            45.0,
+            45.0
+          ],
+          "confidence": 0.95
+        },
+        {
+          "shape": "square",
+          "color": "blue",
+          "area": 6561,
+          "bbox": [
+            146,
+            88,
+            226,
+            168
+          ],
+          "mean_rgb": [
+            45.0,
+            85.0,
+            220.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "red",
+      "dominant_shape": "circle",
+      "description": "The image contains a red circle, a blue square."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\07_orange_circle.png",
+      "filename": "07_orange_circle.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "circle",
+          "color": "orange",
+          "area": 15597,
+          "bbox": [
+            58,
+            58,
+            198,
+            198
+          ],
+          "mean_rgb": [
+            240.0,
+            130.0,
+            30.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "orange",
+      "dominant_shape": "circle",
+      "description": "The image contains a orange circle."
+    },
+    {
+      "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\08_teal_triangle.png",
+      "filename": "08_teal_triangle.png",
+      "width": 256,
+      "height": 256,
+      "background_rgb": [
+        255,
+        255,
+        255
+      ],
+      "object_count": 1,
+      "objects": [
+        {
+          "shape": "triangle",
+          "color": "teal",
+          "area": 12961,
+          "bbox": [
+            48,
+            48,
+            208,
+            208
+          ],
+          "mean_rgb": [
+            30.0,
+            170.0,
+            170.0
+          ],
+          "confidence": 0.95
+        }
+      ],
+      "dominant_color": "teal",
+      "dominant_shape": "triangle",
+      "description": "The image contains a teal triangle."
+    }
+  ],
+  "classification_evaluation": {
+    "accuracy": 1.0,
+    "correct": 8,
+    "total": 8,
+    "details": [
+      {
+        "filename": "01_red_circle.png",
+        "expected": [
+          [
+            "circle",
+            "red"
+          ]
+        ],
+        "predicted": [
+          [
+            "circle",
+            "red"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "02_blue_square.png",
+        "expected": [
+          [
+            "square",
+            "blue"
+          ]
+        ],
+        "predicted": [
+          [
+            "square",
+            "blue"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "03_green_triangle.png",
+        "expected": [
+          [
+            "triangle",
+            "green"
+          ]
+        ],
+        "predicted": [
+          [
+            "triangle",
+            "green"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "04_yellow_star.png",
+        "expected": [
+          [
+            "star",
+            "yellow"
+          ]
+        ],
+        "predicted": [
+          [
+            "star",
+            "yellow"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "05_purple_rectangle.png",
+        "expected": [
+          [
+            "rectangle",
+            "purple"
+          ]
+        ],
+        "predicted": [
+          [
+            "rectangle",
+            "purple"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "06_red_circle_blue_square.png",
+        "expected": [
+          [
+            "circle",
+            "red"
+          ],
+          [
+            "square",
+            "blue"
+          ]
+        ],
+        "predicted": [
+          [
+            "circle",
+            "red"
+          ],
+          [
+            "square",
+            "blue"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "07_orange_circle.png",
+        "expected": [
+          [
+            "circle",
+            "orange"
+          ]
+        ],
+        "predicted": [
+          [
+            "circle",
+            "orange"
+          ]
+        ],
+        "match": true
+      },
+      {
+        "filename": "08_teal_triangle.png",
+        "expected": [
+          [
+            "triangle",
+            "teal"
+          ]
+        ],
+        "predicted": [
+          [
+            "triangle",
+            "teal"
+          ]
+        ],
+        "match": true
+      }
+    ]
+  },
+  "qa": [
+    {
+      "question": "What shape is in image 1?",
+      "answer": "The red object in 01_red_circle.png is a circle.",
+      "evidence": {
+        "shape": "circle",
+        "color": "red",
+        "area": 15597,
+        "bbox": [
+          58,
+          58,
+          198,
+          198
+        ],
+        "mean_rgb": [
+          220.0,
+          45.0,
+          45.0
+        ],
+        "confidence": 0.95
+      },
+      "confidence": 0.95
+    },
+    {
+      "question": "What color is the square in image 2?",
+      "answer": "The square in 02_blue_square.png is blue.",
+      "evidence": {
+        "shape": "square",
+        "color": "blue",
+        "area": 19881,
+        "bbox": [
+          58,
+          58,
+          198,
+          198
+        ],
+        "mean_rgb": [
+          45.0,
+          85.0,
+          220.0
+        ],
+        "confidence": 0.95
+      },
+      "confidence": 0.95
+    },
+    {
+      "question": "How many shapes are in image 6?",
+      "answer": "Image 6 contains 2 shape(s): a red circle, a blue square.",
+      "evidence": {
+        "path": "C:\\Users\\arung\\OneDrive\\Desktop\\ARCH-BACKUP-2026\\Home\\Projects\\agentic-ai-experiments\\08_visual_qa\\images\\06_red_circle_blue_square.png",
+        "filename": "06_red_circle_blue_square.png",
+        "width": 256,
+        "height": 256,
+        "background_rgb": [
+          255,
+          255,
+          255
+        ],
+        "object_count": 2,
+        "objects": [
+          {
+            "shape": "circle",
+            "color": "red",
+            "area": 8005,
+            "bbox": [
+              22,
+              88,
+              122,
+              188
+            ],
+            "mean_rgb": [
+              220.0,
+              45.0,
+              45.0
+            ],
+            "confidence": 0.95
+          },
+          {
+            "shape": "square",
+            "color": "blue",
+            "area": 6561,
+            "bbox": [
+              146,
+              88,
+              226,
+              168
+            ],
+            "mean_rgb": [
+              45.0,
+              85.0,
+              220.0
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "dominant_color": "red",
+        "dominant_shape": "circle",
+        "description": "The image contains a red circle, a blue square."
+      },
+      "confidence": 0.95
+    },
+    {
+      "question": "Which images contain a circle?",
+      "answer": "Matching images: 01_red_circle.png (the image contains a red circle.), 06_red_circle_blue_square.png (the image contains a red circle, a blue square.), 07_orange_circle.png (the image contains a orange circle.).",
+      "evidence": {
+        "matches": [
+          "01_red_circle.png",
+          "06_red_circle_blue_square.png",
+          "07_orange_circle.png"
+        ]
+      },
+      "confidence": 0.85
+    },
+    {
+      "question": "Which image is most similar to image 1?",
+      "answer": "The most similar image is 07_orange_circle.png (similarity 0.995): The image contains a orange circle.",
+      "evidence": {
+        "similar": [
+          {
+            "filename": "07_orange_circle.png",
+            "score": 0.9946,
+            "description": "The image contains a orange circle."
+          },
+          {
+            "filename": "04_yellow_star.png",
+            "score": 0.9782,
+            "description": "The image contains a yellow star."
+          }
+        ]
+      },
+      "confidence": 0.85
+    },
+    {
+      "question": "What is the dominant color in image 4?",
+      "answer": "The star in 04_yellow_star.png is yellow.",
+      "evidence": {
+        "shape": "star",
+        "color": "yellow",
+        "area": 8051,
+        "bbox": [
+          51,
+          48,
+          204,
+          192
+        ],
+        "mean_rgb": [
+          240.0,
+          200.0,
+          30.0
+        ],
+        "confidence": 0.95
+      },
+      "confidence": 0.95
+    }
+  ]
+}

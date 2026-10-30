@@ -1,0 +1,244 @@
+{
+  "query": "How can agentic AI improve SOC operations while managing prompt injection risk?",
+  "plan": {
+    "query": "How can agentic AI improve SOC operations while managing prompt injection risk?",
+    "concepts": [
+      "agentic AI",
+      "prompt injection",
+      "SOC operations"
+    ],
+    "subquestions": [
+      "What is agentic AI and how is it applied to SOC operations?",
+      "How does agentic AI improve alert triage and incident response?",
+      "What are the main prompt injection and tool-use risks?",
+      "Which controls and best practices make agentic deployment safe?"
+    ],
+    "strategy": "concept-guided decomposition"
+  },
+  "notes": [
+    {
+      "subquestion": "What is agentic AI and how is it applied to SOC operations?",
+      "findings": [
+        {
+          "text": "In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "SOC analysts face high alert volumes and repetitive enrichment work.",
+          "source_id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage"
+        },
+        {
+          "text": "Agentic workflows extend this by drafting an investigation plan and gathering evidence.",
+          "source_id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage"
+        }
+      ],
+      "sources": [
+        {
+          "id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage",
+          "source": "local corpus"
+        }
+      ],
+      "result_count": 2
+    },
+    {
+      "subquestion": "How does agentic AI improve alert triage and incident response?",
+      "findings": [
+        {
+          "text": "Metrics include alert-to-case time, false positive rate, containment time and analyst hours saved.",
+          "source_id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage"
+        },
+        {
+          "text": "SOC analysts face high alert volumes and repetitive enrichment work.",
+          "source_id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage"
+        },
+        {
+          "text": "Common failure modes include hallucinated evidence, over-broad tool access and prompt injection through untrusted alert fields.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields.",
+          "source_id": "DOC-003",
+          "title": "Prompt Injection and Tool-Use Risks",
+          "url": "local://corpus/prompt-injection"
+        }
+      ],
+      "sources": [
+        {
+          "id": "DOC-005",
+          "title": "Automating SOC Triage with AI",
+          "url": "local://corpus/soc-triage",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-003",
+          "title": "Prompt Injection and Tool-Use Risks",
+          "url": "local://corpus/prompt-injection",
+          "source": "local corpus"
+        }
+      ],
+      "result_count": 3
+    },
+    {
+      "subquestion": "What are the main prompt injection and tool-use risks?",
+      "findings": [
+        {
+          "text": "Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields.",
+          "source_id": "DOC-003",
+          "title": "Prompt Injection and Tool-Use Risks",
+          "url": "local://corpus/prompt-injection"
+        },
+        {
+          "text": "Prompt injection occurs when untrusted text changes the behaviour of a model.",
+          "source_id": "DOC-003",
+          "title": "Prompt Injection and Tool-Use Risks",
+          "url": "local://corpus/prompt-injection"
+        },
+        {
+          "text": "Every tool call should emit an audit record containing the agent identity, input, output and decision.",
+          "source_id": "DOC-004",
+          "title": "Designing Safe Tool-Using Agents",
+          "url": "local://corpus/safe-agents"
+        },
+        {
+          "text": "Clients should pin server versions, review tool descriptions and constrain which tools can be called.",
+          "source_id": "DOC-008",
+          "title": "Model Context Protocol and Agent Interoperability",
+          "url": "local://corpus/mcp"
+        }
+      ],
+      "sources": [
+        {
+          "id": "DOC-003",
+          "title": "Prompt Injection and Tool-Use Risks",
+          "url": "local://corpus/prompt-injection",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-004",
+          "title": "Designing Safe Tool-Using Agents",
+          "url": "local://corpus/safe-agents",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-008",
+          "title": "Model Context Protocol and Agent Interoperability",
+          "url": "local://corpus/mcp",
+          "source": "local corpus"
+        }
+      ],
+      "result_count": 3
+    },
+    {
+      "subquestion": "Which controls and best practices make agentic deployment safe?",
+      "findings": [
+        {
+          "text": "Agents work best when their tool permissions are narrow, every action is logged, and high-impact actions require human approval.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions.",
+          "source_id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc"
+        },
+        {
+          "text": "A safe agent architecture separates the planner from the executor.",
+          "source_id": "DOC-004",
+          "title": "Designing Safe Tool-Using Agents",
+          "url": "local://corpus/safe-agents"
+        },
+        {
+          "text": "Governance succeeds when controls are embedded in engineering workflows rather than maintained as separate paperwork.",
+          "source_id": "DOC-007",
+          "title": "AI Governance and Regulatory Compliance",
+          "url": "local://corpus/ai-governance"
+        },
+        {
+          "text": "Privacy controls include data minimisation, retention limits and access reviews.",
+          "source_id": "DOC-007",
+          "title": "AI Governance and Regulatory Compliance",
+          "url": "local://corpus/ai-governance"
+        }
+      ],
+      "sources": [
+        {
+          "id": "DOC-001",
+          "title": "Agentic AI in Security Operations",
+          "url": "local://corpus/agentic-ai-soc",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-004",
+          "title": "Designing Safe Tool-Using Agents",
+          "url": "local://corpus/safe-agents",
+          "source": "local corpus"
+        },
+        {
+          "id": "DOC-007",
+          "title": "AI Governance and Regulatory Compliance",
+          "url": "local://corpus/ai-governance",
+          "source": "local corpus"
+        }
+      ],
+      "result_count": 3
+    }
+  ],
+  "reflection": {
+    "coverage_score": 1.0,
+    "unique_sources": 6,
+    "gaps": [],
+    "follow_up_queries": [],
+    "sufficient": true
+  },
+  "metadata": {
+    "query": "How can agentic AI improve SOC operations while managing prompt injection risk?",
+    "sources": 6,
+    "findings": 14,
+    "confidence": 1.0,
+    "confidence_label": "High",
+    "coverage": 1.0,
+    "passes": 1,
+    "gaps": []
+  },
+  "markdown": "# Deep Research Report\n\n**Question:** How can agentic AI improve SOC operations while managing prompt injection risk?\n\n## Executive Summary\n\n- In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary. [S1]\n- Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions. [S1]\n- SOC analysts face high alert volumes and repetitive enrichment work. [S2]\n- Agentic workflows extend this by drafting an investigation plan and gathering evidence. [S2]\n\nConfidence: **High** (1.00) based on 6 unique sources and 1 research pass(es).\n\n## Findings by Sub-question\n\n### 1. What is agentic AI and how is it applied to SOC operations?\n- In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary. [S1]\n- Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions. [S1]\n- SOC analysts face high alert volumes and repetitive enrichment work. [S2]\n- Agentic workflows extend this by drafting an investigation plan and gathering evidence. [S2]\n\n### 2. How does agentic AI improve alert triage and incident response?\n- Metrics include alert-to-case time, false positive rate, containment time and analyst hours saved. [S2]\n- SOC analysts face high alert volumes and repetitive enrichment work. [S2]\n- Common failure modes include hallucinated evidence, over-broad tool access and prompt injection through untrusted alert fields. [S1]\n- In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary. [S1]\n- Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields. [S3]\n\n### 3. What are the main prompt injection and tool-use risks?\n- Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields. [S3]\n- Prompt injection occurs when untrusted text changes the behaviour of a model. [S3]\n- Every tool call should emit an audit record containing the agent identity, input, output and decision. [S4]\n- Clients should pin server versions, review tool descriptions and constrain which tools can be called. [S5]\n\n### 4. Which controls and best practices make agentic deployment safe?\n- Agents work best when their tool permissions are narrow, every action is logged, and high-impact actions require human approval. [S1]\n- Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions. [S1]\n- A safe agent architecture separates the planner from the executor. [S4]\n- Governance succeeds when controls are embedded in engineering workflows rather than maintained as separate paperwork. [S6]\n- Privacy controls include data minimisation, retention limits and access reviews. [S6]\n\n## Risks and Limitations\n\n- Common failure modes include hallucinated evidence, over-broad tool access and prompt injection through untrusted alert fields. [S1]\n- Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields. [S3]\n- Prompt injection occurs when untrusted text changes the behaviour of a model. [S3]\n\n## Recommendations\n\n- Every tool call should emit an audit record containing the agent identity, input, output and decision. [S4]\n- Clients should pin server versions, review tool descriptions and constrain which tools can be called. [S5]\n- Governance succeeds when controls are embedded in engineering workflows rather than maintained as separate paperwork. [S6]\n- Privacy controls include data minimisation, retention limits and access reviews. [S6]\n\n## Evidence Gaps\n\n- No material gaps were detected in the collected evidence.\n\n## References\n\n- **[S1]** Agentic AI in Security Operations - local://corpus/agentic-ai-soc (local corpus)\n- **[S2]** Automating SOC Triage with AI - local://corpus/soc-triage (local corpus)\n- **[S3]** Prompt Injection and Tool-Use Risks - local://corpus/prompt-injection (local corpus)\n- **[S4]** Designing Safe Tool-Using Agents - local://corpus/safe-agents (local corpus)\n- **[S5]** Model Context Protocol and Agent Interoperability - local://corpus/mcp (local corpus)\n- **[S6]** AI Governance and Regulatory Compliance - local://corpus/ai-governance (local corpus)\n\n## Methodology\n\n- Plan: concept-guided decomposition\n- Sub-questions investigated: 4\n- Research passes: 1\n- Unique sources: 6\n- Coverage score: 1.00\n- Retrieval: lexical search over a curated corpus (offline mode) or DuckDuckGo plus page extraction (live mode)."
+}

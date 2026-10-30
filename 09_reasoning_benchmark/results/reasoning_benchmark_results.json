@@ -1,0 +1,723 @@
+{
+  "benchmark_size": 12,
+  "results": [
+    {
+      "strategy": "zero_shot",
+      "description": "Direct answer, no examples or reasoning scaffold",
+      "accuracy": 0.25,
+      "correct": 3,
+      "total": 12,
+      "average_latency_ms": 0.1,
+      "average_prompt_chars": 154,
+      "by_category": {
+        "algebra": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 1
+        },
+        "arithmetic": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "average": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 1
+        },
+        "combinatorics": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 1
+        },
+        "logic": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 2
+        },
+        "percentage": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "probability": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 2
+        },
+        "sequence": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 2
+        }
+      },
+      "records": [
+        {
+          "id": "R01",
+          "category": "arithmetic",
+          "difficulty": "easy",
+          "question": "What is 18 * 7 + 12?",
+          "expected": "138",
+          "predicted": "138",
+          "correct": true,
+          "steps": [
+            "Evaluate: 18 * 7 + 12 = 138"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.86,
+          "prompt_chars": 100
+        },
+        {
+          "id": "R02",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A team has 24 analysts. 25% are on night shift. How many analysts are on night shift?",
+          "expected": "6",
+          "predicted": "6",
+          "correct": true,
+          "steps": [
+            "Value = total * rate / 100 = 6"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.18,
+          "prompt_chars": 165
+        },
+        {
+          "id": "R03",
+          "category": "algebra",
+          "difficulty": "medium",
+          "question": "Solve for x: 3x + 7 = 31",
+          "expected": "8",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'algebra'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 104
+        },
+        {
+          "id": "R04",
+          "category": "logic",
+          "difficulty": "easy",
+          "question": "All SOC analysts are trained in SIEM. Priya is a SOC analyst. Is Priya trained in SIEM?",
+          "expected": "yes",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'logic'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 167
+        },
+        {
+          "id": "R05",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A sequence is 2, 6, 18, 54, ... What is the next term?",
+          "expected": "162",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'sequence'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 134
+        },
+        {
+          "id": "R06",
+          "category": "probability",
+          "difficulty": "medium",
+          "question": "A dataset has 8 phishing emails and 12 benign emails. What fraction of the emails are phishing?",
+          "expected": "0.4",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'probability'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 175
+        },
+        {
+          "id": "R07",
+          "category": "average",
+          "difficulty": "easy",
+          "question": "The average of 10, 20, 30, 40 is?",
+          "expected": "25",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'average'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 113
+        },
+        {
+          "id": "R08",
+          "category": "combinatorics",
+          "difficulty": "medium",
+          "question": "A PIN has 4 digits and each digit can be 0-9. How many combinations are possible?",
+          "expected": "10000",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'combinatorics'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 161
+        },
+        {
+          "id": "R09",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A ransomware attack encrypts 40 of 200 files. What percentage of the files is encrypted?",
+          "expected": "20%",
+          "predicted": "20%",
+          "correct": true,
+          "steps": [
+            "Percentage = part / whole * 100 = 20%"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.12,
+          "prompt_chars": 168
+        },
+        {
+          "id": "R10",
+          "category": "logic",
+          "difficulty": "medium",
+          "question": "All vulnerabilities with CVSS >= 9 are critical. CVE-X has a CVSS score of 9.8. Is CVE-X critical?",
+          "expected": "yes",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'logic'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 178
+        },
+        {
+          "id": "R11",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A team detects 5 incidents on day 1, 10 incidents on day 2, and 20 incidents on day 3. If the pattern continues, how many incidents are detected on day 5?",
+          "expected": "80",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'sequence'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 234
+        },
+        {
+          "id": "R12",
+          "category": "probability",
+          "difficulty": "easy",
+          "question": "A firewall blocks 15 of 60 requests. What fraction of requests is blocked?",
+          "expected": "0.25",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Zero-shot fallback does not cover 'probability'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 154
+        }
+      ]
+    },
+    {
+      "strategy": "few_shot",
+      "description": "Three worked examples followed by the question",
+      "accuracy": 0.583,
+      "correct": 7,
+      "total": 12,
+      "average_latency_ms": 0.05,
+      "average_prompt_chars": 267,
+      "by_category": {
+        "algebra": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "arithmetic": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "average": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "combinatorics": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 1
+        },
+        "logic": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 2
+        },
+        "percentage": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "probability": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "sequence": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 2
+        }
+      },
+      "records": [
+        {
+          "id": "R01",
+          "category": "arithmetic",
+          "difficulty": "easy",
+          "question": "What is 18 * 7 + 12?",
+          "expected": "138",
+          "predicted": "138",
+          "correct": true,
+          "steps": [
+            "Evaluate: 18 * 7 + 12 = 138"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.1,
+          "prompt_chars": 213
+        },
+        {
+          "id": "R02",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A team has 24 analysts. 25% are on night shift. How many analysts are on night shift?",
+          "expected": "6",
+          "predicted": "6",
+          "correct": true,
+          "steps": [
+            "Value = total * rate / 100 = 6"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.03,
+          "prompt_chars": 278
+        },
+        {
+          "id": "R03",
+          "category": "algebra",
+          "difficulty": "medium",
+          "question": "Solve for x: 3x + 7 = 31",
+          "expected": "8",
+          "predicted": "8",
+          "correct": true,
+          "steps": [
+            "Divide by coefficient: x = 8"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.21,
+          "prompt_chars": 217
+        },
+        {
+          "id": "R04",
+          "category": "logic",
+          "difficulty": "easy",
+          "question": "All SOC analysts are trained in SIEM. Priya is a SOC analyst. Is Priya trained in SIEM?",
+          "expected": "yes",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Few-shot fallback does not cover 'logic'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 280
+        },
+        {
+          "id": "R05",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A sequence is 2, 6, 18, 54, ... What is the next term?",
+          "expected": "162",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Few-shot fallback does not cover 'sequence'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 247
+        },
+        {
+          "id": "R06",
+          "category": "probability",
+          "difficulty": "medium",
+          "question": "A dataset has 8 phishing emails and 12 benign emails. What fraction of the emails are phishing?",
+          "expected": "0.4",
+          "predicted": "0.4",
+          "correct": true,
+          "steps": [
+            "Fraction = 8 / 20 = 0.4"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.14,
+          "prompt_chars": 288
+        },
+        {
+          "id": "R07",
+          "category": "average",
+          "difficulty": "easy",
+          "question": "The average of 10, 20, 30, 40 is?",
+          "expected": "25",
+          "predicted": "25",
+          "correct": true,
+          "steps": [
+            "Average = 100 / 4 = 25"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.09,
+          "prompt_chars": 226
+        },
+        {
+          "id": "R08",
+          "category": "combinatorics",
+          "difficulty": "medium",
+          "question": "A PIN has 4 digits and each digit can be 0-9. How many combinations are possible?",
+          "expected": "10000",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Few-shot fallback does not cover 'combinatorics'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 274
+        },
+        {
+          "id": "R09",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A ransomware attack encrypts 40 of 200 files. What percentage of the files is encrypted?",
+          "expected": "20%",
+          "predicted": "20%",
+          "correct": true,
+          "steps": [
+            "Percentage = part / whole * 100 = 20%"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 281
+        },
+        {
+          "id": "R10",
+          "category": "logic",
+          "difficulty": "medium",
+          "question": "All vulnerabilities with CVSS >= 9 are critical. CVE-X has a CVSS score of 9.8. Is CVE-X critical?",
+          "expected": "yes",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Few-shot fallback does not cover 'logic'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 291
+        },
+        {
+          "id": "R11",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A team detects 5 incidents on day 1, 10 incidents on day 2, and 20 incidents on day 3. If the pattern continues, how many incidents are detected on day 5?",
+          "expected": "80",
+          "predicted": "unknown",
+          "correct": false,
+          "steps": [
+            "Few-shot fallback does not cover 'sequence'"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.0,
+          "prompt_chars": 347
+        },
+        {
+          "id": "R12",
+          "category": "probability",
+          "difficulty": "easy",
+          "question": "A firewall blocks 15 of 60 requests. What fraction of requests is blocked?",
+          "expected": "0.25",
+          "predicted": "0.25",
+          "correct": true,
+          "steps": [
+            "Fraction = 15 / 60 = 0.25"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 267
+        }
+      ]
+    },
+    {
+      "strategy": "structured",
+      "description": "Step-by-step reasoning across all categories",
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12,
+      "average_latency_ms": 0.07,
+      "average_prompt_chars": 286,
+      "by_category": {
+        "algebra": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "arithmetic": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "average": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "combinatorics": {
+          "accuracy": 1.0,
+          "correct": 1,
+          "total": 1
+        },
+        "logic": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "percentage": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "probability": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        },
+        "sequence": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "records": [
+        {
+          "id": "R01",
+          "category": "arithmetic",
+          "difficulty": "easy",
+          "question": "What is 18 * 7 + 12?",
+          "expected": "138",
+          "predicted": "138",
+          "correct": true,
+          "steps": [
+            "Extract expression: 18 * 7 + 12",
+            "Evaluate: 18 * 7 + 12 = 138"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.07,
+          "prompt_chars": 232
+        },
+        {
+          "id": "R02",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A team has 24 analysts. 25% are on night shift. How many analysts are on night shift?",
+          "expected": "6",
+          "predicted": "6",
+          "correct": true,
+          "steps": [
+            "Identify rate=25% and total=24",
+            "Value = total * rate / 100 = 6"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.02,
+          "prompt_chars": 297
+        },
+        {
+          "id": "R03",
+          "category": "algebra",
+          "difficulty": "medium",
+          "question": "Solve for x: 3x + 7 = 31",
+          "expected": "8",
+          "predicted": "8",
+          "correct": true,
+          "steps": [
+            "Equation: 3x + 7 = 31",
+            "Move constant: 3x = 24",
+            "Divide by coefficient: x = 8"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 236
+        },
+        {
+          "id": "R04",
+          "category": "logic",
+          "difficulty": "easy",
+          "question": "All SOC analysts are trained in SIEM. Priya is a SOC analyst. Is Priya trained in SIEM?",
+          "expected": "yes",
+          "predicted": "yes",
+          "correct": true,
+          "steps": [
+            "Rule: all soc analysts are trained in siem",
+            "The premise matches the rule; apply modus ponens"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.34,
+          "prompt_chars": 299
+        },
+        {
+          "id": "R05",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A sequence is 2, 6, 18, 54, ... What is the next term?",
+          "expected": "162",
+          "predicted": "162",
+          "correct": true,
+          "steps": [
+            "Sequence: ['2', '6', '18', '54']",
+            "Common ratio = 3",
+            "Next term = 54 * 3 = 162"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.22,
+          "prompt_chars": 266
+        },
+        {
+          "id": "R06",
+          "category": "probability",
+          "difficulty": "medium",
+          "question": "A dataset has 8 phishing emails and 12 benign emails. What fraction of the emails are phishing?",
+          "expected": "0.4",
+          "predicted": "0.4",
+          "correct": true,
+          "steps": [
+            "Favourable outcomes = 8",
+            "Total outcomes = 8 + 12 = 20",
+            "Fraction = 8 / 20 = 0.4"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 307
+        },
+        {
+          "id": "R07",
+          "category": "average",
+          "difficulty": "easy",
+          "question": "The average of 10, 20, 30, 40 is?",
+          "expected": "25",
+          "predicted": "25",
+          "correct": true,
+          "steps": [
+            "Values: ['10', '20', '30', '40']",
+            "Sum = 100",
+            "Average = 100 / 4 = 25"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 245
+        },
+        {
+          "id": "R08",
+          "category": "combinatorics",
+          "difficulty": "medium",
+          "question": "A PIN has 4 digits and each digit can be 0-9. How many combinations are possible?",
+          "expected": "10000",
+          "predicted": "10000",
+          "correct": true,
+          "steps": [
+            "Digits = 4",
+            "Choices per digit = 10",
+            "Combinations = 10^4 = 10000"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.06,
+          "prompt_chars": 293
+        },
+        {
+          "id": "R09",
+          "category": "percentage",
+          "difficulty": "easy",
+          "question": "A ransomware attack encrypts 40 of 200 files. What percentage of the files is encrypted?",
+          "expected": "20%",
+          "predicted": "20%",
+          "correct": true,
+          "steps": [
+            "Identify part=40 and whole=200",
+            "Percentage = part / whole * 100 = 20%"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 300
+        },
+        {
+          "id": "R10",
+          "category": "logic",
+          "difficulty": "medium",
+          "question": "All vulnerabilities with CVSS >= 9 are critical. CVE-X has a CVSS score of 9.8. Is CVE-X critical?",
+          "expected": "yes",
+          "predicted": "yes",
+          "correct": true,
+          "steps": [
+            "Rule threshold: CVSS >= 9 is critical",
+            "Observed value: 9.8",
+            "9.8 >= 9 -> yes"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 310
+        },
+        {
+          "id": "R11",
+          "category": "sequence",
+          "difficulty": "medium",
+          "question": "A team detects 5 incidents on day 1, 10 incidents on day 2, and 20 incidents on day 3. If the pattern continues, how many incidents are detected on day 5?",
+          "expected": "80",
+          "predicted": "80",
+          "correct": true,
+          "steps": [
+            "Observed sequence by day: [(1, 5.0), (2, 10.0), (3, 20.0)]",
+            "Common ratio = 2",
+            "Day 5 = 20 * 2^2 = 80"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.03,
+          "prompt_chars": 366
+        },
+        {
+          "id": "R12",
+          "category": "probability",
+          "difficulty": "easy",
+          "question": "A firewall blocks 15 of 60 requests. What fraction of requests is blocked?",
+          "expected": "0.25",
+          "predicted": "0.25",
+          "correct": true,
+          "steps": [
+            "Part = 15, whole = 60",
+            "Fraction = 15 / 60 = 0.25"
+          ],
+          "mode": "offline",
+          "latency_ms": 0.01,
+          "prompt_chars": 286
+        }
+      ]
+    }
+  ]
+}

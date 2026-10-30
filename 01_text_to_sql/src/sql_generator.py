@@ -1,6 +1,7 @@
 import re
 
-from .llm import ask_llm
+from .llm import LLMUnavailable, ask_llm
+from .offline_sql import generate_sql_offline
 
 
 def generate_sql(question: str, schema: str) -> str:
@@ -28,9 +29,13 @@ RULES:
 SQL:
 """
 
-    response = ask_llm(prompt)
-
-    return clean_sql(response)
+    try:
+        response = ask_llm(prompt)
+        return clean_sql(response)
+    except LLMUnavailable:
+        # No model server available: use the deterministic translator so
+        # the workflow remains fully executable in a lab/offline setting.
+        return generate_sql_offline(question, schema)
 
 
 def clean_sql(response: str) -> str:

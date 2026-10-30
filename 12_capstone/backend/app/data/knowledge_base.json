@@ -1,0 +1,72 @@
+[
+  {
+    "id": "product-overview",
+    "title": "NovaDesk product overview",
+    "category": "Product",
+    "tags": ["product", "platform", "modules", "features"],
+    "content": "NovaDesk is a unified customer operations platform that combines ticketing, a shared inbox, workflow automation, and embedded analytics. Teams use it to manage customer conversations across email, chat, and social channels from a single workspace.\n\nThe platform includes a knowledge base, an AI assistant, and an open REST API. NovaDesk is designed for support, success, and revenue teams that want one source of truth for every customer interaction.\n\nCore modules are Support Desk, Analytics Pro, CRM Suite, Data Connector, Security Shield, and API Gateway. Each module can be purchased separately or as part of a bundled plan."
+  },
+  {
+    "id": "pricing-plans",
+    "title": "Pricing and plans",
+    "category": "Billing",
+    "tags": ["pricing", "price", "cost", "plans", "billing"],
+    "content": "NovaDesk offers three plans. Starter costs $29 per user per month and includes ticketing, email, a shared inbox, and one knowledge base. Growth costs $59 per user per month and adds workflow automation, analytics dashboards, Salesforce and HubSpot integrations, and priority support.\n\nEnterprise pricing is custom and includes SSO/SAML, audit logs, custom roles, data residency options, a dedicated success manager, and a 99.9% uptime SLA. Annual billing receives a 20% discount compared with monthly billing.\n\nAdditional seats are prorated automatically. Overage for AI assistant credits is billed at $0.02 per additional conversation. Nonprofits and eligible startups can request a 15% discount."
+  },
+  {
+    "id": "security-compliance",
+    "title": "Security and compliance",
+    "category": "Security",
+    "tags": ["security", "compliance", "soc2", "iso27001", "gdpr", "encryption", "sso"],
+    "content": "NovaDesk is SOC 2 Type II certified and aligned with ISO 27001 controls. Customer data is encrypted in transit with TLS 1.3 and at rest with AES-256. Production access requires hardware-backed multi-factor authentication and is reviewed quarterly.\n\nEnterprise plans support SSO with SAML 2.0 and OIDC, SCIM provisioning, custom roles, and audit log export. Penetration tests are performed at least annually by an independent third party, and a summary report is available under NDA.\n\nNovaDesk supports GDPR and CCPA workflows, including data subject access requests, deletion requests, and a signed data processing agreement. Sub-processors are listed on the trust center and customers are notified before material changes."
+  },
+  {
+    "id": "onboarding-implementation",
+    "title": "Onboarding and implementation",
+    "category": "Services",
+    "tags": ["onboarding", "implementation", "migration", "training"],
+    "content": "A standard NovaDesk implementation takes two to four weeks depending on data volume and integration scope. The process starts with a discovery workshop, followed by workspace configuration, data migration, integration setup, and admin training.\n\nGrowth and Enterprise customers receive a guided onboarding with a solution architect. Migration tooling supports CSV imports and connectors for Zendesk, Intercom, and Freshdesk. Historical attachments and ticket metadata can be preserved.\n\nTraining includes two live admin sessions, recorded walkthroughs, and a certification path in the NovaDesk Academy. Go-live support is available for the first two weeks after launch."
+  },
+  {
+    "id": "integrations",
+    "title": "Integrations and API",
+    "category": "Platform",
+    "tags": ["integrations", "api", "webhooks", "salesforce", "slack", "jira"],
+    "content": "NovaDesk ships with native integrations for Slack, Microsoft Teams, Salesforce, HubSpot, Jira, Zendesk, Shopify, and Stripe. Integrations support bidirectional sync for contacts, tickets, and order context.\n\nThe REST API uses OAuth 2.0 or scoped API keys and exposes tickets, contacts, companies, conversations, knowledge articles, and analytics endpoints. Webhooks support ticket created, updated, and solved events with signed payloads and automatic retries for up to 24 hours.\n\nRate limits are 600 requests per minute for Growth and 1,200 requests per minute for Enterprise. Bulk export endpoints are available for reporting and backup workflows."
+  },
+  {
+    "id": "support-sla",
+    "title": "Support and service levels",
+    "category": "Support",
+    "tags": ["support", "sla", "response", "uptime", "incident"],
+    "content": "Support is available 24/5 by chat and email on Starter and Growth plans, with 24/7 coverage for Enterprise. The support portal includes documentation, status updates, and a community forum.\n\nResponse targets are one hour for P1 incidents, four business hours for P2, and one business day for P3. Enterprise customers receive a 99.9% monthly uptime SLA and service credits if the target is missed.\n\nStatus incidents are published at status.novadesk.example. Planned maintenance is announced at least five business days in advance and is scheduled outside peak hours."
+  },
+  {
+    "id": "refund-policy",
+    "title": "Refund and cancellation policy",
+    "category": "Billing",
+    "tags": ["refund", "cancellation", "billing", "money-back"],
+    "content": "Annual plans can be cancelled within 30 days of the initial purchase for a full refund. After 30 days, annual plans are non-refundable but can be cancelled at renewal to avoid the next term.\n\nMonthly plans can be cancelled at any time and remain active through the end of the current billing period. Unused seats are not refunded retroactively, but future invoices are prorated.\n\nApproved refunds are returned to the original payment method within five to seven business days. Customers should open a billing ticket or contact billing@novadesk.example with the invoice number."
+  },
+  {
+    "id": "data-residency",
+    "title": "Data residency and backups",
+    "category": "Security",
+    "tags": ["data", "residency", "backups", "region", "deletion"],
+    "content": "NovaDesk offers US and EU production regions. Enterprise customers can choose a primary region during onboarding, and new workspaces are provisioned in the selected region.\n\nBackups run daily and are retained for 35 days. Point-in-time recovery is available for the previous seven days on Enterprise. Backup data is encrypted with the same AES-256 standard as production data.\n\nWhen a customer deletes a workspace, active data is removed within 30 days and backup copies expire according to the retention schedule. Deletion certificates are available on request."
+  },
+  {
+    "id": "ai-assistant",
+    "title": "AI assistant capabilities",
+    "category": "Product",
+    "tags": ["ai", "assistant", "rag", "sql", "research", "agent"],
+    "content": "The NovaDesk AI assistant answers questions from the knowledge base, queries operational data, and produces research briefings. It routes each request to a retrieval agent, a SQL agent, or a research agent, then combines the results.\n\nAnswers include source citations and a trace of tool calls so agents can be audited. The assistant does not take destructive actions without human approval, and every write action is logged.\n\nAI features can be disabled per workspace. Conversation data used for retrieval stays inside the selected region, and model providers can be configured to use zero-retention endpoints."
+  },
+  {
+    "id": "company-facts",
+    "title": "Company facts",
+    "category": "Company",
+    "tags": ["company", "headquarters", "employees", "founded", "customer"],
+    "content": "NovaDesk was founded in 2019 and is headquartered in Austin, Texas. The company has approximately 180 employees across the United States, Europe, and Asia.\n\nMore than 1,200 customers use NovaDesk, ranging from early-stage startups to public enterprises. The company is privately held and has raised a Series B round.\n\nNovaDesk publishes an annual customer experience benchmark and maintains an open engineering blog. Press inquiries can be sent to press@novadesk.example."
+  }
+]

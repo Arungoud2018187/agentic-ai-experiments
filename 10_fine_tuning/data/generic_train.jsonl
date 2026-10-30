@@ -1,0 +1,250 @@
+{"text": "Incident report: a shared account was used by two people; seen in the cloud audit trail.", "label": "insider"}
+{"text": "SOC ticket: a user completed the required training; flagged during triage.", "label": "benign"}
+{"text": "Alert: a user downloaded a large number of files; detected on an endpoint.", "label": "insider"}
+{"text": "Alert: a user downloaded a large number of files; observed in the email gateway.", "label": "insider"}
+{"text": "Telemetry: a device is running slowly and files are missing; correlated with identity logs.", "label": "malware"}
+{"text": "SOC ticket: the sender address looks different from the usual contact; correlated with identity logs.", "label": "phishing"}
+{"text": "Telemetry: a user completed the required training; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: a message requests account verification; reported by the service desk.", "label": "phishing"}
+{"text": "Alert: a shared account was used by two people; flagged during triage.", "label": "insider"}
+{"text": "Incident report: a device is running slowly and files are missing; seen in the cloud audit trail.", "label": "malware"}
+{"text": "SOC ticket: an email asks for a payment to a new bank account; detected on an endpoint.", "label": "phishing"}
+{"text": "Incident report: users cannot reach the login page; flagged during triage.", "label": "ddos"}
+{"text": "Incident report: a shared account was used by two people; seen in the cloud audit trail.", "label": "insider"}
+{"text": "SOC ticket: a user reports strange pop-ups; observed in the email gateway.", "label": "malware"}
+{"text": "Telemetry: a support ticket was resolved; reported by the service desk.", "label": "benign"}
+{"text": "SOC ticket: the sender address looks different from the usual contact; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: a shared account was used by two people; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: a device is running slowly and files are missing; flagged during triage.", "label": "malware"}
+{"text": "Alert: the website is slow and sometimes unavailable; correlated with identity logs.", "label": "ddos"}
+{"text": "Telemetry: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Incident report: an employee accessed data outside normal hours; detected on an endpoint.", "label": "insider"}
+{"text": "Case note: a user downloaded a large number of files; flagged during triage.", "label": "insider"}
+{"text": "Case note: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Telemetry: the network link is congested; flagged during triage.", "label": "ddos"}
+{"text": "Case note: a departing employee copied documents; observed in the email gateway.", "label": "insider"}
+{"text": "Case note: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Alert: a user completed the required training; observed in the email gateway.", "label": "benign"}
+{"text": "Incident report: a user forwards a suspicious message to the help desk; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: an unusual email asks the recipient to click a link; correlated with identity logs.", "label": "phishing"}
+{"text": "Telemetry: the sender address looks different from the usual contact; correlated with identity logs.", "label": "phishing"}
+{"text": "SOC ticket: an unknown program was installed without approval; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: users cannot reach the login page; observed in the email gateway.", "label": "ddos"}
+{"text": "Case note: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: a user forwards a suspicious message to the help desk; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: a support ticket was resolved; detected on an endpoint.", "label": "benign"}
+{"text": "Telemetry: an unusual email asks the recipient to click a link; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: a user completed the required training; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: the website is slow and sometimes unavailable; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: a support ticket was resolved; flagged during triage.", "label": "benign"}
+{"text": "Incident report: an email asks for a payment to a new bank account; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: a shared account was used by two people; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: the sender address looks different from the usual contact; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: a user completed the required training; flagged during triage.", "label": "benign"}
+{"text": "Incident report: an unknown program was installed without approval; detected on an endpoint.", "label": "malware"}
+{"text": "Alert: a software update was installed; reported by the service desk.", "label": "benign"}
+{"text": "Incident report: users cannot reach the login page; detected on an endpoint.", "label": "ddos"}
+{"text": "Case note: routine maintenance completed on schedule; observed in the email gateway.", "label": "benign"}
+{"text": "Incident report: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: the sender address looks different from the usual contact; observed in the email gateway.", "label": "phishing"}
+{"text": "Incident report: a software update was installed; reported by the service desk.", "label": "benign"}
+{"text": "Alert: the computer restarts unexpectedly; reported by the service desk.", "label": "malware"}
+{"text": "Alert: users cannot reach the login page; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Alert: a departing employee copied documents; flagged during triage.", "label": "insider"}
+{"text": "SOC ticket: a software update was installed; correlated with identity logs.", "label": "benign"}
+{"text": "Telemetry: a support ticket was resolved; flagged during triage.", "label": "benign"}
+{"text": "Case note: a departing employee copied documents; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: a USB device was connected to a workstation; observed in the email gateway.", "label": "insider"}
+{"text": "Incident report: traffic volume is much higher than normal; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Alert: a USB device was connected to a workstation; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: the sender address looks different from the usual contact; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Telemetry: the computer restarts unexpectedly; detected on an endpoint.", "label": "malware"}
+{"text": "Case note: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: an email asks for a payment to a new bank account; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: a user reports strange pop-ups; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Case note: a shared account was used by two people; detected on an endpoint.", "label": "insider"}
+{"text": "Telemetry: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: routine maintenance completed on schedule; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: the network link is congested; detected on an endpoint.", "label": "ddos"}
+{"text": "Case note: a user completed the required training; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: a USB device was connected to a workstation; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: a departing employee copied documents; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Alert: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Incident report: a device is running slowly and files are missing; observed in the email gateway.", "label": "malware"}
+{"text": "Telemetry: routine maintenance completed on schedule; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: a shared account was used by two people; reported by the service desk.", "label": "insider"}
+{"text": "Case note: a message requests account verification; reported by the service desk.", "label": "phishing"}
+{"text": "Incident report: a support ticket was resolved; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Alert: a message requests account verification; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: a support ticket was resolved; reported by the service desk.", "label": "benign"}
+{"text": "Case note: a software update was installed; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: a shared account was used by two people; flagged during triage.", "label": "insider"}
+{"text": "Case note: an email asks for a payment to a new bank account; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Case note: an employee accessed data outside normal hours; reported by the service desk.", "label": "insider"}
+{"text": "Case note: the website is slow and sometimes unavailable; detected on an endpoint.", "label": "ddos"}
+{"text": "Alert: a USB device was connected to a workstation; detected on an endpoint.", "label": "insider"}
+{"text": "Incident report: users cannot reach the login page; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Case note: an unusual email asks the recipient to click a link; detected on an endpoint.", "label": "phishing"}
+{"text": "Case note: an unusual email asks the recipient to click a link; flagged during triage.", "label": "phishing"}
+{"text": "Case note: a user completed the required training; reported by the service desk.", "label": "benign"}
+{"text": "Alert: a device is running slowly and files are missing; correlated with identity logs.", "label": "malware"}
+{"text": "Alert: users cannot reach the login page; detected on an endpoint.", "label": "ddos"}
+{"text": "Telemetry: a backup job finished successfully; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: users cannot reach the login page; observed in the email gateway.", "label": "ddos"}
+{"text": "Telemetry: a shared account was used by two people; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: an application tries to access protected folders; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: many requests arrive from different locations; reported by the service desk.", "label": "ddos"}
+{"text": "Telemetry: a backup job finished successfully; flagged during triage.", "label": "benign"}
+{"text": "Alert: an unknown program was installed without approval; flagged during triage.", "label": "malware"}
+{"text": "Telemetry: an application tries to access protected folders; correlated with identity logs.", "label": "malware"}
+{"text": "Case note: a user reports strange pop-ups; observed in the email gateway.", "label": "malware"}
+{"text": "Case note: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Alert: a user downloaded a large number of files; reported by the service desk.", "label": "insider"}
+{"text": "Telemetry: an application tries to access protected folders; detected on an endpoint.", "label": "malware"}
+{"text": "Alert: a support ticket was resolved; seen in the cloud audit trail.", "label": "benign"}
+{"text": "SOC ticket: a user downloaded a large number of files; correlated with identity logs.", "label": "insider"}
+{"text": "Alert: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: a support ticket was resolved; detected on an endpoint.", "label": "benign"}
+{"text": "Telemetry: an application tries to access protected folders; observed in the email gateway.", "label": "malware"}
+{"text": "Incident report: users cannot reach the login page; correlated with identity logs.", "label": "ddos"}
+{"text": "Incident report: a departing employee copied documents; detected on an endpoint.", "label": "insider"}
+{"text": "Case note: an employee accessed data outside normal hours; detected on an endpoint.", "label": "insider"}
+{"text": "Alert: routine maintenance completed on schedule; observed in the email gateway.", "label": "benign"}
+{"text": "Incident report: a user reports strange pop-ups; flagged during triage.", "label": "malware"}
+{"text": "Incident report: the computer restarts unexpectedly; reported by the service desk.", "label": "malware"}
+{"text": "SOC ticket: a software update was installed; detected on an endpoint.", "label": "benign"}
+{"text": "Incident report: a backup job finished successfully; detected on an endpoint.", "label": "benign"}
+{"text": "Incident report: users cannot reach the login page; observed in the email gateway.", "label": "ddos"}
+{"text": "Alert: a departing employee copied documents; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: a user forwards a suspicious message to the help desk; reported by the service desk.", "label": "phishing"}
+{"text": "Alert: the sender address looks different from the usual contact; detected on an endpoint.", "label": "phishing"}
+{"text": "SOC ticket: an email asks for a payment to a new bank account; detected on an endpoint.", "label": "phishing"}
+{"text": "Incident report: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Case note: a support ticket was resolved; flagged during triage.", "label": "benign"}
+{"text": "Telemetry: the computer restarts unexpectedly; detected on an endpoint.", "label": "malware"}
+{"text": "Alert: a support ticket was resolved; observed in the email gateway.", "label": "benign"}
+{"text": "Incident report: a user reports strange pop-ups; detected on an endpoint.", "label": "malware"}
+{"text": "Case note: many requests arrive from different locations; flagged during triage.", "label": "ddos"}
+{"text": "Case note: traffic volume is much higher than normal; detected on an endpoint.", "label": "ddos"}
+{"text": "Incident report: a user reports strange pop-ups; reported by the service desk.", "label": "malware"}
+{"text": "Case note: traffic volume is much higher than normal; correlated with identity logs.", "label": "ddos"}
+{"text": "Alert: many requests arrive from different locations; detected on an endpoint.", "label": "ddos"}
+{"text": "Alert: a user completed the required training; observed in the email gateway.", "label": "benign"}
+{"text": "Case note: a user reports strange pop-ups; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: a device is running slowly and files are missing; reported by the service desk.", "label": "malware"}
+{"text": "Case note: a shared account was used by two people; flagged during triage.", "label": "insider"}
+{"text": "Incident report: an email asks for a payment to a new bank account; reported by the service desk.", "label": "phishing"}
+{"text": "Telemetry: a user reports strange pop-ups; seen in the cloud audit trail.", "label": "malware"}
+{"text": "SOC ticket: a departing employee copied documents; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Incident report: a USB device was connected to a workstation; detected on an endpoint.", "label": "insider"}
+{"text": "Alert: a support ticket was resolved; correlated with identity logs.", "label": "benign"}
+{"text": "Incident report: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: an application tries to access protected folders; detected on an endpoint.", "label": "malware"}
+{"text": "Telemetry: the network link is congested; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Incident report: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: an unknown program was installed without approval; flagged during triage.", "label": "malware"}
+{"text": "Case note: a user downloaded a large number of files; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Alert: an application tries to access protected folders; reported by the service desk.", "label": "malware"}
+{"text": "Case note: a user forwards a suspicious message to the help desk; flagged during triage.", "label": "phishing"}
+{"text": "Alert: an unknown program was installed without approval; observed in the email gateway.", "label": "malware"}
+{"text": "Alert: the website is slow and sometimes unavailable; observed in the email gateway.", "label": "ddos"}
+{"text": "Incident report: a user completed the required training; flagged during triage.", "label": "benign"}
+{"text": "Case note: a backup job finished successfully; correlated with identity logs.", "label": "benign"}
+{"text": "SOC ticket: a departing employee copied documents; flagged during triage.", "label": "insider"}
+{"text": "Case note: many requests arrive from different locations; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Case note: the website is slow and sometimes unavailable; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "SOC ticket: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: a software update was installed; correlated with identity logs.", "label": "benign"}
+{"text": "Telemetry: a user completed the required training; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Alert: a device is running slowly and files are missing; observed in the email gateway.", "label": "malware"}
+{"text": "Alert: routine maintenance completed on schedule; detected on an endpoint.", "label": "benign"}
+{"text": "Alert: an email asks for a payment to a new bank account; correlated with identity logs.", "label": "phishing"}
+{"text": "Case note: the sender address looks different from the usual contact; flagged during triage.", "label": "phishing"}
+{"text": "Case note: a device is running slowly and files are missing; seen in the cloud audit trail.", "label": "malware"}
+{"text": "SOC ticket: a departing employee copied documents; flagged during triage.", "label": "insider"}
+{"text": "SOC ticket: the website is slow and sometimes unavailable; reported by the service desk.", "label": "ddos"}
+{"text": "Case note: the website is slow and sometimes unavailable; observed in the email gateway.", "label": "ddos"}
+{"text": "Incident report: an application tries to access protected folders; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: a device is running slowly and files are missing; reported by the service desk.", "label": "malware"}
+{"text": "SOC ticket: the website is slow and sometimes unavailable; observed in the email gateway.", "label": "ddos"}
+{"text": "Telemetry: a user forwards a suspicious message to the help desk; correlated with identity logs.", "label": "phishing"}
+{"text": "Alert: an application tries to access protected folders; observed in the email gateway.", "label": "malware"}
+{"text": "Alert: a device is running slowly and files are missing; flagged during triage.", "label": "malware"}
+{"text": "SOC ticket: an unusual email asks the recipient to click a link; detected on an endpoint.", "label": "phishing"}
+{"text": "Alert: an unusual email asks the recipient to click a link; correlated with identity logs.", "label": "phishing"}
+{"text": "Incident report: users cannot reach the login page; observed in the email gateway.", "label": "ddos"}
+{"text": "SOC ticket: an email asks for a payment to a new bank account; flagged during triage.", "label": "phishing"}
+{"text": "SOC ticket: routine maintenance completed on schedule; reported by the service desk.", "label": "benign"}
+{"text": "Telemetry: a user reports strange pop-ups; detected on an endpoint.", "label": "malware"}
+{"text": "SOC ticket: a support ticket was resolved; reported by the service desk.", "label": "benign"}
+{"text": "Telemetry: a software update was installed; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: an unusual email asks the recipient to click a link; flagged during triage.", "label": "phishing"}
+{"text": "Alert: an employee accessed data outside normal hours; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: the network link is congested; correlated with identity logs.", "label": "ddos"}
+{"text": "Telemetry: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Telemetry: an application tries to access protected folders; seen in the cloud audit trail.", "label": "malware"}
+{"text": "Case note: a software update was installed; flagged during triage.", "label": "benign"}
+{"text": "Case note: a USB device was connected to a workstation; reported by the service desk.", "label": "insider"}
+{"text": "Incident report: traffic volume is much higher than normal; correlated with identity logs.", "label": "ddos"}
+{"text": "Alert: a device is running slowly and files are missing; observed in the email gateway.", "label": "malware"}
+{"text": "Incident report: an application tries to access protected folders; correlated with identity logs.", "label": "malware"}
+{"text": "Telemetry: an application tries to access protected folders; reported by the service desk.", "label": "malware"}
+{"text": "Alert: a user forwards a suspicious message to the help desk; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Alert: many requests arrive from different locations; flagged during triage.", "label": "ddos"}
+{"text": "Incident report: many requests arrive from different locations; detected on an endpoint.", "label": "ddos"}
+{"text": "SOC ticket: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Alert: a departing employee copied documents; reported by the service desk.", "label": "insider"}
+{"text": "Case note: an unknown program was installed without approval; reported by the service desk.", "label": "malware"}
+{"text": "Alert: the network link is congested; observed in the email gateway.", "label": "ddos"}
+{"text": "SOC ticket: the website is slow and sometimes unavailable; correlated with identity logs.", "label": "ddos"}
+{"text": "Case note: a software update was installed; seen in the cloud audit trail.", "label": "benign"}
+{"text": "SOC ticket: the website is slow and sometimes unavailable; flagged during triage.", "label": "ddos"}
+{"text": "Alert: a user downloaded a large number of files; correlated with identity logs.", "label": "insider"}
+{"text": "Telemetry: the website is slow and sometimes unavailable; seen in the cloud audit trail.", "label": "ddos"}
+{"text": "Case note: a user completed the required training; flagged during triage.", "label": "benign"}
+{"text": "Incident report: traffic volume is much higher than normal; observed in the email gateway.", "label": "ddos"}
+{"text": "Incident report: an unknown program was installed without approval; detected on an endpoint.", "label": "malware"}
+{"text": "SOC ticket: the network link is congested; correlated with identity logs.", "label": "ddos"}
+{"text": "Telemetry: the website is slow and sometimes unavailable; detected on an endpoint.", "label": "ddos"}
+{"text": "SOC ticket: an email asks for a payment to a new bank account; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: a departing employee copied documents; flagged during triage.", "label": "insider"}
+{"text": "Case note: a device is running slowly and files are missing; reported by the service desk.", "label": "malware"}
+{"text": "Telemetry: a USB device was connected to a workstation; flagged during triage.", "label": "insider"}
+{"text": "SOC ticket: a message requests account verification; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Incident report: a message requests account verification; flagged during triage.", "label": "phishing"}
+{"text": "Case note: a support ticket was resolved; seen in the cloud audit trail.", "label": "benign"}
+{"text": "Case note: a user completed the required training; correlated with identity logs.", "label": "benign"}
+{"text": "Alert: users cannot reach the login page; correlated with identity logs.", "label": "ddos"}
+{"text": "Alert: a backup job finished successfully; correlated with identity logs.", "label": "benign"}
+{"text": "SOC ticket: a message requests account verification; flagged during triage.", "label": "phishing"}
+{"text": "Case note: a USB device was connected to a workstation; correlated with identity logs.", "label": "insider"}
+{"text": "Case note: the network link is congested; observed in the email gateway.", "label": "ddos"}
+{"text": "SOC ticket: a shared account was used by two people; observed in the email gateway.", "label": "insider"}
+{"text": "Case note: a support ticket was resolved; reported by the service desk.", "label": "benign"}
+{"text": "Telemetry: a user reports strange pop-ups; observed in the email gateway.", "label": "malware"}
+{"text": "Telemetry: the computer restarts unexpectedly; reported by the service desk.", "label": "malware"}
+{"text": "Case note: an email asks for a payment to a new bank account; reported by the service desk.", "label": "phishing"}
+{"text": "Case note: a departing employee copied documents; reported by the service desk.", "label": "insider"}
+{"text": "Case note: a support ticket was resolved; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: a message requests account verification; detected on an endpoint.", "label": "phishing"}
+{"text": "Telemetry: a user completed the required training; detected on an endpoint.", "label": "benign"}
+{"text": "SOC ticket: an application tries to access protected folders; flagged during triage.", "label": "malware"}
+{"text": "Case note: the sender address looks different from the usual contact; observed in the email gateway.", "label": "phishing"}
+{"text": "Telemetry: the computer restarts unexpectedly; detected on an endpoint.", "label": "malware"}
+{"text": "Incident report: a device is running slowly and files are missing; correlated with identity logs.", "label": "malware"}
+{"text": "Case note: a shared account was used by two people; detected on an endpoint.", "label": "insider"}
+{"text": "Telemetry: routine maintenance completed on schedule; detected on an endpoint.", "label": "benign"}
+{"text": "Case note: a device is running slowly and files are missing; flagged during triage.", "label": "malware"}
+{"text": "Telemetry: a user forwards a suspicious message to the help desk; observed in the email gateway.", "label": "phishing"}
+{"text": "Telemetry: the network link is congested; correlated with identity logs.", "label": "ddos"}
+{"text": "Telemetry: users cannot reach the login page; flagged during triage.", "label": "ddos"}
+{"text": "Telemetry: a user completed the required training; reported by the service desk.", "label": "benign"}
+{"text": "Alert: a user forwards a suspicious message to the help desk; reported by the service desk.", "label": "phishing"}
+{"text": "Telemetry: traffic volume is much higher than normal; flagged during triage.", "label": "ddos"}
+{"text": "Case note: a message requests account verification; flagged during triage.", "label": "phishing"}
+{"text": "Incident report: an email asks for a payment to a new bank account; seen in the cloud audit trail.", "label": "phishing"}
+{"text": "Case note: the website is slow and sometimes unavailable; reported by the service desk.", "label": "ddos"}
+{"text": "SOC ticket: a departing employee copied documents; seen in the cloud audit trail.", "label": "insider"}
+{"text": "Case note: a device is running slowly and files are missing; observed in the email gateway.", "label": "malware"}
+{"text": "Alert: the sender address looks different from the usual contact; seen in the cloud audit trail.", "label": "phishing"}

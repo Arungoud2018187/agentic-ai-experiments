@@ -1,0 +1,641 @@
+{
+  "generated_at": "2026-10-30T10:10:45.223889+00:00",
+  "dataset": {
+    "train_samples": 503,
+    "validation_samples": 108,
+    "test_samples": 109,
+    "classes": [
+      "account",
+      "billing",
+      "general",
+      "refund",
+      "shipping",
+      "technical"
+    ]
+  },
+  "variants": [
+    {
+      "name": "baseline_fp32",
+      "display_name": "Baseline FP32",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": [
+        {
+          "label": "account",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        {
+          "label": "billing",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        {
+          "label": "general",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        {
+          "label": "refund",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 16
+        },
+        {
+          "label": "shipping",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 18
+        },
+        {
+          "label": "technical",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 25
+        }
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "test_samples": 109,
+      "latency": {
+        "runs": 100,
+        "inner_repeats": 10,
+        "mean_ms": 0.0186,
+        "p50_ms": 0.0184,
+        "p95_ms": 0.0206,
+        "min_ms": 0.0173,
+        "max_ms": 0.0237,
+        "throughput_per_second": 54347.8
+      },
+      "throughput": {
+        "batch_size": 64,
+        "repeats": 30,
+        "samples_per_second": 253238.0
+      },
+      "size_bytes": 200216,
+      "size_mb": 0.1909,
+      "prediction_agreement_with_baseline": 1.0,
+      "accuracy_delta": 0.0,
+      "accuracy_retention_pct": 100.0,
+      "compression_vs_baseline": 1.0,
+      "latency_change_pct": 0.0,
+      "throughput_change_pct": 0.0,
+      "relative_to_baseline": {
+        "accuracy_delta": 0.0,
+        "compression": 1.0,
+        "latency_change_pct": 0.0
+      }
+    },
+    {
+      "name": "int8_quantized",
+      "display_name": "INT8 quantized",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": [
+        {
+          "label": "account",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        {
+          "label": "billing",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        {
+          "label": "general",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        {
+          "label": "refund",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 16
+        },
+        {
+          "label": "shipping",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 18
+        },
+        {
+          "label": "technical",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 25
+        }
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "test_samples": 109,
+      "latency": {
+        "runs": 100,
+        "inner_repeats": 10,
+        "mean_ms": 0.0192,
+        "p50_ms": 0.0186,
+        "p95_ms": 0.0222,
+        "min_ms": 0.0173,
+        "max_ms": 0.0276,
+        "throughput_per_second": 53792.4
+      },
+      "throughput": {
+        "batch_size": 64,
+        "repeats": 30,
+        "samples_per_second": 314192.7
+      },
+      "size_bytes": 50464,
+      "size_mb": 0.0481,
+      "quantization": {
+        "scheme": "symmetric per-tensor int8 (weights), float32 biases",
+        "size_bytes": 50464,
+        "reference_size_bytes": 200216,
+        "compression_ratio": 3.968,
+        "scales": {
+          "W1": 0.00400919,
+          "W2": 0.00864166
+        },
+        "reconstruction_error": {
+          "W1": {
+            "relative_frobenius_error": 0.015737,
+            "max_abs_error": 0.002005
+          },
+          "W2": {
+            "relative_frobenius_error": 0.005713,
+            "max_abs_error": 0.00432
+          }
+        }
+      },
+      "prediction_agreement_with_baseline": 1.0,
+      "accuracy_delta": 0.0,
+      "accuracy_retention_pct": 100.0,
+      "compression_vs_baseline": 3.968,
+      "latency_change_pct": 1.09,
+      "throughput_change_pct": 24.07,
+      "relative_to_baseline": {
+        "accuracy_delta": 0.0,
+        "compression": 3.968,
+        "latency_change_pct": 1.09
+      }
+    },
+    {
+      "name": "structured_pruned",
+      "display_name": "Structured prune 50%",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": [
+        {
+          "label": "account",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        {
+          "label": "billing",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        {
+          "label": "general",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        {
+          "label": "refund",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 16
+        },
+        {
+          "label": "shipping",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 18
+        },
+        {
+          "label": "technical",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 25
+        }
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "test_samples": 109,
+      "latency": {
+        "runs": 100,
+        "inner_repeats": 10,
+        "mean_ms": 0.0176,
+        "p50_ms": 0.0175,
+        "p95_ms": 0.0186,
+        "min_ms": 0.0168,
+        "max_ms": 0.0246,
+        "throughput_per_second": 57306.6
+      },
+      "throughput": {
+        "batch_size": 64,
+        "repeats": 30,
+        "samples_per_second": 506422.6
+      },
+      "size_bytes": 100120,
+      "size_mb": 0.0955,
+      "dense_size_bytes": 100120,
+      "hidden_units": 64,
+      "pruning": {
+        "type": "structured_hidden_units",
+        "fraction": 0.5,
+        "kept_units": 64,
+        "original_units": 128
+      },
+      "prediction_agreement_with_baseline": 1.0,
+      "accuracy_delta": 0.0,
+      "accuracy_retention_pct": 100.0,
+      "compression_vs_baseline": 2.0,
+      "latency_change_pct": -4.89,
+      "throughput_change_pct": 99.98,
+      "relative_to_baseline": {
+        "accuracy_delta": 0.0,
+        "compression": 2.0,
+        "latency_change_pct": -4.89
+      }
+    },
+    {
+      "name": "structured_pruned_int8",
+      "display_name": "Structured prune 50% + INT8",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class": [
+        {
+          "label": "account",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        {
+          "label": "billing",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        {
+          "label": "general",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13
+        },
+        {
+          "label": "refund",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 16
+        },
+        {
+          "label": "shipping",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 18
+        },
+        {
+          "label": "technical",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 25
+        }
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          25
+        ]
+      ],
+      "test_samples": 109,
+      "latency": {
+        "runs": 100,
+        "inner_repeats": 10,
+        "mean_ms": 0.0207,
+        "p50_ms": 0.0176,
+        "p95_ms": 0.0282,
+        "min_ms": 0.0172,
+        "max_ms": 0.03,
+        "throughput_per_second": 56850.5
+      },
+      "throughput": {
+        "batch_size": 64,
+        "repeats": 30,
+        "samples_per_second": 554512.6
+      },
+      "size_bytes": 25248,
+      "size_mb": 0.0241,
+      "dense_size_bytes": 25248,
+      "hidden_units": 64,
+      "pruning": {
+        "type": "structured_hidden_units",
+        "fraction": 0.5,
+        "kept_units": 64,
+        "original_units": 128
+      },
+      "quantization": {
+        "scheme": "symmetric per-tensor int8 (weights), float32 biases",
+        "size_bytes": 25248,
+        "reference_size_bytes": 100120,
+        "compression_ratio": 3.965,
+        "scales": {
+          "W1": 0.00400919,
+          "W2": 0.00864166
+        },
+        "reconstruction_error": {
+          "W1": {
+            "relative_frobenius_error": 0.014429,
+            "max_abs_error": 0.002004
+          },
+          "W2": {
+            "relative_frobenius_error": 0.005281,
+            "max_abs_error": 0.004305
+          }
+        }
+      },
+      "prediction_agreement_with_baseline": 1.0,
+      "accuracy_delta": 0.0,
+      "accuracy_retention_pct": 100.0,
+      "compression_vs_baseline": 7.93,
+      "latency_change_pct": -4.35,
+      "throughput_change_pct": 118.97,
+      "relative_to_baseline": {
+        "accuracy_delta": 0.0,
+        "compression": 7.93,
+        "latency_change_pct": -4.35
+      }
+    }
+  ],
+  "summary": {
+    "baseline_accuracy": 1.0,
+    "best_accuracy_variant": "structured_pruned_int8",
+    "best_accuracy": 1.0,
+    "smallest_variant": "structured_pruned_int8",
+    "smallest_size_bytes": 25248,
+    "max_compression": 7.93,
+    "recommended_variant": "structured_pruned_int8",
+    "recommendation": "Use Structured prune 50% + INT8: 7.93x smaller than FP32 with 100.0% test accuracy (+0.0 percentage points). INT8 quantization cuts the artifact roughly 4x with no accuracy loss. Structured pruning also reduces inference work, and combining both compounds the savings; validate the pruned model on a larger held-out set before production use.",
+    "latency_note": "Latency is measured on CPU with NumPy. INT8 weights are dequantized at load time, so the measured latency reflects FP32 arithmetic; the optimization's primary benefit is a smaller artifact and lower memory bandwidth. Specialized INT8 kernels are required for wall-clock speedups."
+  },
+  "training": {
+    "samples_per_class": 120,
+    "epochs": 30,
+    "seed": 42,
+    "metrics": {
+      "train": {
+        "accuracy": 1.0,
+        "samples": 503
+      },
+      "validation": {
+        "accuracy": 1.0,
+        "samples": 108
+      },
+      "test": {
+        "accuracy": 1.0,
+        "samples": 109
+      }
+    },
+    "model_summary": {
+      "input_dim": 384,
+      "hidden_dim": 128,
+      "output_dim": 6,
+      "parameters": 50054,
+      "float32_size_bytes": 200216,
+      "labels": [
+        "account",
+        "billing",
+        "general",
+        "refund",
+        "shipping",
+        "technical"
+      ]
+    }
+  },
+  "configuration": {
+    "sparsity": 0.5,
+    "benchmark_runs": 100,
+    "seed": 42
+  },
+  "duration_seconds": 0.8
+}

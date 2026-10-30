@@ -1,0 +1,58 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Agentic AI in Security Operations",
+    "url": "local://corpus/agentic-ai-soc",
+    "tags": ["agentic ai", "soc", "automation", "security operations", "triage"],
+    "text": "Agentic AI refers to systems that pursue a goal by planning, selecting tools and observing the results of their actions. In a security operations centre, an agent can collect alerts, enrich indicators, query a SIEM, open a ticket and draft an incident summary. The main benefit is reduced mean time to triage, because repetitive investigation steps are executed automatically. Agents work best when their tool permissions are narrow, every action is logged, and high-impact actions require human approval. A supervised agent can escalate uncertain cases to an analyst instead of acting autonomously. Common failure modes include hallucinated evidence, over-broad tool access and prompt injection through untrusted alert fields."
+  },
+  {
+    "id": "DOC-002",
+    "title": "Retrieval Augmented Generation for Security Knowledge",
+    "url": "local://corpus/rag-security",
+    "tags": ["rag", "retrieval", "embeddings", "knowledge base", "grounding"],
+    "text": "Retrieval Augmented Generation combines a document index with a language model. Documents are chunked, embedded and stored in a vector index. At query time the most similar chunks are retrieved and inserted into the prompt so that the answer is grounded in evidence. In security teams RAG is used for runbooks, policy questions and threat intelligence summaries. Retrieval quality depends on chunking, embedding quality and reranking. Citations are essential: an answer without a source cannot be audited. RAG reduces hallucination but does not eliminate it, because the model can still misread retrieved context or follow instructions embedded in a malicious document."
+  },
+  {
+    "id": "DOC-003",
+    "title": "Prompt Injection and Tool-Use Risks",
+    "url": "local://corpus/prompt-injection",
+    "tags": ["prompt injection", "tool use", "llm security", "indirect injection", "risk"],
+    "text": "Prompt injection occurs when untrusted text changes the behaviour of a model. Direct injection comes from the user; indirect injection arrives through retrieved documents, web pages, emails or alert fields. An agent with tool access can be tricked into leaking secrets, calling privileged APIs or exfiltrating data. Defences include treating all retrieved content as untrusted, separating instructions from data, allow-listing tools, enforcing least privilege and requiring confirmation for destructive actions. Input filtering alone is insufficient. Output validation, sandboxed execution and monitoring of tool calls provide stronger defence in depth. Red-team tests should include malicious documents that ask the agent to ignore its system prompt."
+  },
+  {
+    "id": "DOC-004",
+    "title": "Designing Safe Tool-Using Agents",
+    "url": "local://corpus/safe-agents",
+    "tags": ["tool use", "sandbox", "least privilege", "guardrails", "architecture"],
+    "text": "A safe agent architecture separates the planner from the executor. The planner proposes an action, a policy layer validates it, and a sandbox executes it with a short-lived credential. Tools should expose narrow, typed interfaces rather than arbitrary shell access. Every tool call should emit an audit record containing the agent identity, input, output and decision. Rate limits and budget limits prevent runaway loops. Human-in-the-loop approval is appropriate for payments, data deletion and production changes. Evaluation should measure task success, unsafe action rate, latency and cost. Observability is a security control, not only an operational convenience."
+  },
+  {
+    "id": "DOC-005",
+    "title": "Automating SOC Triage with AI",
+    "url": "local://corpus/soc-triage",
+    "tags": ["soc", "triage", "alert fatigue", "automation", "incident response"],
+    "text": "SOC analysts face high alert volumes and repetitive enrichment work. Automation can deduplicate alerts, join identity and asset context, and assign a risk score before an analyst opens the case. Agentic workflows extend this by drafting an investigation plan and gathering evidence. Metrics include alert-to-case time, false positive rate, containment time and analyst hours saved. Automation must preserve evidence integrity and chain of custody. Analysts should be able to see which tools ran and what data was returned. A common mistake is optimising for closure rate rather than detection quality."
+  },
+  {
+    "id": "DOC-006",
+    "title": "Evaluation of LLM Reasoning Systems",
+    "url": "local://corpus/llm-evaluation",
+    "tags": ["evaluation", "reasoning", "benchmark", "accuracy", "metrics"],
+    "text": "Reasoning benchmarks compare models and prompting strategies on tasks such as arithmetic, logic, planning and multi-step analysis. A fair benchmark fixes the prompt format, decoding parameters and scoring rules. Exact-match accuracy is simple but can under-credit equivalent answers. Evaluators should normalise numeric formats and record latency and cost alongside accuracy. Chain-of-thought prompting can improve multi-step tasks but increases token usage. Few-shot examples help format adherence. Results should be reported per category because aggregate accuracy can hide weaknesses in logic or arithmetic."
+  },
+  {
+    "id": "DOC-007",
+    "title": "AI Governance and Regulatory Compliance",
+    "url": "local://corpus/ai-governance",
+    "tags": ["governance", "compliance", "risk", "audit", "policy"],
+    "text": "AI governance defines who is accountable for an AI system and how risks are approved, monitored and retired. A model inventory records purpose, owner, data sources and evaluation results. High-impact use cases require documented risk assessments, human oversight and appeal paths. Audit logs must capture inputs, outputs, model versions and human decisions. Privacy controls include data minimisation, retention limits and access reviews. Regulation such as the EU AI Act introduces obligations for transparency, robustness and post-market monitoring. Governance succeeds when controls are embedded in engineering workflows rather than maintained as separate paperwork."
+  },
+  {
+    "id": "DOC-008",
+    "title": "Model Context Protocol and Agent Interoperability",
+    "url": "local://corpus/mcp",
+    "tags": ["mcp", "interoperability", "tools", "integration", "protocol"],
+    "text": "The Model Context Protocol standardises how applications expose tools, resources and prompts to language models. A server declares capabilities and a client connects the model to those capabilities. This reduces bespoke integration code but expands the attack surface: a malicious server can return poisoned content or request dangerous scopes. Clients should pin server versions, review tool descriptions and constrain which tools can be called. Resource access should be read-only by default. Logging and permission prompts help users understand when an agent is reaching outside its sandbox."
+  }
+]
